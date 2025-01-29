@@ -92,6 +92,85 @@ def generate_clicked(task: worker.AsyncTask):
     print(f'Total time: {execution_time:.2f} seconds')
     return
 
+def generate_all_clicked(prompt_text_list, task):
+    """
+    Process multiple prompts sequentially, generating images for each prompt.
+    """
+    import ldm_patched.modules.model_management as model_management
+
+    with model_management.interrupt_processing_mutex:
+        model_management.interrupt_processing = False
+
+    # Convert the textbox input into a list of prompts
+    prompts = [p.strip() for p in prompt_text_list.split('\n') if p.strip()]
+    if not prompts:
+        return
+    
+    execution_start_time = time.perf_counter()
+
+    # Initial progress update
+    yield gr.update(visible=True, value=modules.html.make_progress_html(1, 'Waiting for tasks to start...')), \
+        gr.update(visible=True, value=None), \
+        gr.update(visible=False, value=None), \
+        gr.update(visible=False)
+
+    for i, current_prompt in enumerate(prompts):
+        # Create a new task for the current prompt by updating the first argument
+        task_args = list(task.args)
+        task_args[0] = current_prompt
+        current_task = worker.AsyncTask(task_args)
+        
+        if len(current_task.args) == 0:
+            continue
+        
+        worker.async_tasks.append(current_task)
+        finished = False
+        
+        # Show progress for current prompt
+        yield gr.update(visible=True, value=modules.html.make_progress_html(1, f'Processing prompt {i+1}/{len(prompts)}: {current_prompt[:50]}...')), \
+            gr.update(visible=True, value=None), \
+            gr.update(visible=False, value=None), \
+            gr.update(visible=False)
+
+        while not finished:
+            time.sleep(0.01)
+            if len(current_task.yields) > 0:
+                flag, product = current_task.yields.pop(0)
+                
+                if flag == 'preview':
+                    if len(current_task.yields) > 0 and current_task.yields[0][0] == 'preview':
+                        continue
+                        
+                    percentage, title, image = product
+                    title = f'[{i+1}/{len(prompts)}] {title}'
+                    yield gr.update(visible=True, value=modules.html.make_progress_html(percentage, title)), \
+                        gr.update(visible=True, value=image) if image is not None else gr.update(), \
+                        gr.update(), \
+                        gr.update(visible=False)
+                
+                elif flag == 'results':
+                    yield gr.update(visible=True), \
+                        gr.update(visible=True), \
+                        gr.update(visible=True, value=product), \
+                        gr.update(visible=False)
+                
+                elif flag == 'finish':
+                    if not args_manager.args.disable_enhance_output_sorting:
+                        product = sort_enhance_images(product, current_task)
+                    
+                    yield gr.update(visible=False), \
+                        gr.update(visible=False), \
+                        gr.update(visible=False), \
+                        gr.update(visible=True, value=product)
+                    finished = True
+
+                    if args_manager.args.disable_image_log:
+                        for filepath in product:
+                            if isinstance(filepath, str) and os.path.exists(filepath):
+                                os.remove(filepath)
+
+    execution_time = time.perf_counter() - execution_start_time
+    print(f'Total time for all prompts: {execution_time:.2f} seconds')
 
 def sort_enhance_images(images, task):
     if not task.should_enhance or len(images) <= task.images_to_enhance_count:
@@ -171,6 +250,7 @@ with shared.gradio_root:
                 with gr.Column(scale=17):
                     prompt = gr.Textbox(show_label=False, placeholder="Type prompt here or paste parameters.", elem_id='positive_prompt',
                                         autofocus=True, lines=3)
+                    json_prompt = gr.Textbox(show_label=True, placeholder="Enter JSON list of prompts", elem_id='json_prompt', lines=3)
 
                     default_prompt = modules.config.default_prompt
                     if isinstance(default_prompt, str) and default_prompt != '':
@@ -183,23 +263,6 @@ with shared.gradio_root:
                     load_parameter_button = gr.Button(label="Load Parameters", value="Load Parameters", elem_classes='type_row', elem_id='load_parameter_button', visible=False)
                     skip_button = gr.Button(label="Skip", value="Skip", elem_classes='type_row_half', elem_id='skip_button', visible=False)
                     stop_button = gr.Button(label="Stop", value="Stop", elem_classes='type_row_half', elem_id='stop_button', visible=False)
-
-                    def generate_all(json_input):
-                        import json
-                        try:
-                            prompts = json.loads(json_input)
-                            if not isinstance(prompts, list):
-                                return "Invalid JSON: Expected a list of prompts"
-                        except Exception as e:
-                            return f"Invalid JSON: {str(e)}"
-                        
-                        results = []
-                        for p in prompts:
-                            currentTask.args = [p]
-                            result = worker.process_task(currentTask)
-                            results.append(result)
-                        
-                        return results
 
                     def stop_clicked(currentTask):
                         import ldm_patched.modules.model_management as model_management
@@ -217,7 +280,6 @@ with shared.gradio_root:
 
                     stop_button.click(stop_clicked, inputs=currentTask, outputs=currentTask, queue=False, show_progress=False, _js='cancelGenerateForever')
                     skip_button.click(skip_clicked, inputs=currentTask, outputs=currentTask, queue=False, show_progress=False)
-                    generate_all_button.click(generate_all, inputs=json_prompt, outputs=gallery)
             with gr.Row(elem_classes='advanced_check_row'):
                 input_image_checkbox = gr.Checkbox(label='Input Image', value=modules.config.default_image_prompt_checkbox, container=False, elem_classes='min_check')
                 enhance_checkbox = gr.Checkbox(label='Enhance', value=modules.config.default_enhance_checkbox, container=False, elem_classes='min_check')
@@ -1065,7 +1127,19 @@ with shared.gradio_root:
             .then(lambda: (gr.update(visible=True, interactive=True), gr.update(visible=False, interactive=False), gr.update(visible=False, interactive=False), False),
                   outputs=[generate_button, stop_button, skip_button, state_is_generating]) \
             .then(fn=update_history_link, outputs=history_link) \
-            .then(fn=lambda: None, _js='playNotification').then(fn=lambda: None, _js='refresh_grid_delayed')
+            .then(fn=lambda: None, _js='playNotification') \
+            .then(fn=lambda: None, _js='refresh_grid_delayed')
+
+        generate_all_button.click(lambda: (gr.update(visible=True, interactive=True), gr.update(visible=True, interactive=True), gr.update(visible=False, interactive=False), [], True),
+                         outputs=[stop_button, skip_button, generate_button, gallery, state_is_generating]) \
+            .then(fn=refresh_seed, inputs=[seed_random, image_seed], outputs=image_seed) \
+            .then(fn=get_task, inputs=ctrls, outputs=currentTask) \
+            .then(fn=generate_all_clicked, inputs=[json_prompt, currentTask], outputs=[progress_html, progress_window, progress_gallery, gallery]) \
+            .then(lambda: (gr.update(visible=True, interactive=True), gr.update(visible=False, interactive=False), gr.update(visible=False, interactive=False), False),
+                outputs=[generate_button, stop_button, skip_button, state_is_generating]) \
+            .then(fn=update_history_link, outputs=history_link) \
+            .then(fn=lambda: None, _js='playNotification') \
+            .then(fn=lambda: None, _js='refresh_grid_delayed')
 
         reset_button.click(lambda: [worker.AsyncTask(args=[]), False, gr.update(visible=True, interactive=True)] +
                                    [gr.update(visible=False)] * 6 +
