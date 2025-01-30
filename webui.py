@@ -24,8 +24,13 @@ from modules.ui_gradio_extensions import reload_javascript
 from modules.auth import auth_enabled, check_auth
 from modules.util import is_json
 
+FASTAPI_SERVER_URL = "https://6a03-2a02-8109-b526-c500-ad2c-86ae-c6e1-be69.ngrok-free.app/upload/"
+
 def get_task(*args):
+    print("get_task")
+    print(args)
     args = list(args)
+    
     args.pop(0)
 
     return worker.AsyncTask(args=args)
@@ -76,6 +81,11 @@ def generate_clicked(task: worker.AsyncTask):
                 if not args_manager.args.disable_enhance_output_sorting:
                     product = sort_enhance_images(product, task)
 
+                # Upload images to the FastAPI server
+                for filepath in product:
+                    if isinstance(filepath, str) and os.path.exists(filepath):
+                        upload_image(filepath)
+
                 yield gr.update(visible=False), \
                     gr.update(visible=False), \
                     gr.update(visible=False), \
@@ -92,6 +102,18 @@ def generate_clicked(task: worker.AsyncTask):
     print(f'Total time: {execution_time:.2f} seconds')
     return
 
+# Function to upload images to FastAPI server
+def upload_image(image_path):
+    try:
+        with open(image_path, "rb") as file:
+            response = requests.post(FASTAPI_SERVER_URL, files={"file": file})
+            if response.status_code == 200:
+                print(f"✅ Successfully uploaded {image_path}")
+            else:
+                print(f"❌ Failed to upload {image_path}: {response.text}")
+    except Exception as e:
+        print(f"⚠️ Error uploading {image_path}: {e}")
+
 def generate_all_clicked(prompt_text_list, task):
     """
     Process multiple prompts sequentially, generating images for each prompt.
@@ -105,6 +127,9 @@ def generate_all_clicked(prompt_text_list, task):
     prompts = [p.strip() for p in prompt_text_list.split('\n') if p.strip()]
     if not prompts:
         return
+
+    print(f'Processing {len(prompts)} prompts...')
+    print(prompts)
     
     execution_start_time = time.perf_counter()
 
@@ -115,10 +140,13 @@ def generate_all_clicked(prompt_text_list, task):
         gr.update(visible=False)
 
     for i, current_prompt in enumerate(prompts):
-        # Create a new task for the current prompt by updating the first argument
-        task_args = list(task.args)
-        task_args[0] = current_prompt
-        current_task = worker.AsyncTask(task_args)
+        
+        ctrls_values = []
+        for ctrl in task.args:
+            ctrls_values.append(ctrl.value)
+
+        ctrls_values[2] = current_prompt
+        current_task = get_task(ctrls_values)
         
         if len(current_task.args) == 0:
             continue
