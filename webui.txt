@@ -27,7 +27,7 @@ from modules.util import is_json
 
 FASTAPI_SERVER_URL = "https://6a03-2a02-8109-b526-c500-ad2c-86ae-c6e1-be69.ngrok-free.app/upload/"
 
-def get_task(*args):    
+def get_task(*args):
     print("get_task")
     print(args)
     args = list(args)

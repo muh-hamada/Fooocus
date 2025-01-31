@@ -1,0 +1,22 @@
+{
+    "prompt": "",
+    "negative_prompt": "",
+    "prompt_expansion": "",
+    "styles": "['Fooocus V2', 'Fooocus Semi Realistic', 'Fooocus Masterpiece']",
+    "performance": "Quality",
+    "steps": 60,
+    "resolution": "(1344, 768)",
+    "guidance_scale": 6,
+    "sharpness": 2,
+    "adm_guidance": "(1.5, 0.8, 0.3)",
+    "base_model": "animaPencilXL_v500.safetensors",
+    "refiner_model": "None",
+    "refiner_switch": 0.5,
+    "clip_skip": 2,
+    "sampler": "dpmpp_2m_sde_gpu",
+    "scheduler": "karras",
+    "vae": "Default (model)",
+    "seed": "7330965693877322763",
+    "metadata_scheme": false,
+    "version": "Fooocus v2.5.5"
+}
