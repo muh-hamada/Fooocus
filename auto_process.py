@@ -25,7 +25,7 @@ from modules.ui_gradio_extensions import reload_javascript
 from modules.auth import auth_enabled, check_auth
 from modules.util import is_json
 
-FASTAPI_SERVER_URL = "https://6a03-2a02-8109-b526-c500-ad2c-86ae-c6e1-be69.ngrok-free.app/upload/"
+FASTAPI_SERVER_URL = "https://fe22-2a02-8109-b526-c500-ecb7-7e06-7f76-1531.ngrok-free.app/upload/"
 PROMPTS_FILE = "prompts.json"
 CONFIG_FILE = "config.json"
 
