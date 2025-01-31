@@ -128,6 +128,6 @@ def main():
     for entry in prompts:
         prompt_text = entry['prompt']
         process_prompt(prompt_text)
-        update_prompt(prompts, prompt_text, time.time().isoformat())
+        update_prompt(prompts, prompt_text, time.time())
 
     print("All prompts have been processed.")
