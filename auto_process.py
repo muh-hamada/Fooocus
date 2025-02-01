@@ -41,14 +41,14 @@ def load_prompts(prompts_path):
 
 # Update the prompt with the generated_at field
 # Save the updated prompts to the prompts file
-def update_prompt(prompts, scene_nr, generated_at):
-    for entry in prompts:
+def update_prompt(data, scene_nr, generated_at):
+    for entry in data['prompts']:
         if entry['scene'] == scene_nr:
             entry['generated_at'] = generated_at
             break
 
     with open(PROMPTS_FILE, 'w') as f:
-        json.dump(prompts, f, indent=4)
+        json.dump(data, f, indent=4)
 
 
 def get_task(args):
@@ -125,7 +125,7 @@ def process_prompt(prompt_config, common_prompt, common_negative_prompt):
 def main():
     # config = load_config(CONFIG_FILE)  # Load the configuration from the JSON file
     data = load_prompts(PROMPTS_FILE)  # Load the prompts
-    promts = data['prompts']
+    prompts = data['prompts']
     common_prompt = data['common_prompt']
     negative_common_prompt = data['negative_common_prompt']
 
