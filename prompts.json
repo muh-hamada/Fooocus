@@ -3,12 +3,6 @@
     "negative_common_prompt": "No other travelers with similar appearances. No modern digital devices like laptops or tablets. No English text on signs or menus. No futuristic elements or neon lighting. No animals other than those specifically mentioned in the scene.",
     "prompts": [
         {
-            "scene": 1,
-            "prompt": "Liam walks along a sunny cobblestone street in Madrid, approaching a small café with a charming wooden sign hanging above the entrance. The street is lined with white and pastel-colored buildings with iron balconies adorned with potted plants.",
-            "negative_prompt": "No modern skyscrapers or cars. No other tourists carrying large backpacks. No rainy or cloudy weather.",
-            "generated_at": ""
-        },
-        {
             "scene": 2,
             "prompt": "Liam stands at the entrance of the café, looking at the cozy interior through the large window. The café has wooden tables and chairs, a chalkboard menu on the wall, and a glass display filled with pastries.",
             "negative_prompt": "No futuristic elements. No neon lights. No other customers prominently staring at Liam.",

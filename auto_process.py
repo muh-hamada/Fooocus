@@ -135,6 +135,6 @@ def main():
     # Iterating over each prompt to process
     for entry in prompts:
         process_prompt(entry, common_prompt, negative_common_prompt)
-        update_prompt(prompts, entry['scene'], time.time())
+        update_prompt(data, entry['scene'], time.time())
 
     print("All prompts have been processed.")
