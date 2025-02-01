@@ -3,30 +3,6 @@
     "negative_common_prompt": "No other travelers with similar appearances. No modern digital devices like laptops or tablets. No English text on signs or menus. No futuristic elements or neon lighting. No animals other than those specifically mentioned in the scene.",
     "prompts": [
         {
-            "scene": 2,
-            "prompt": "Liam stands at the entrance of the café, looking at the cozy interior through the large window. The café has wooden tables and chairs, a chalkboard menu on the wall, and a glass display filled with pastries.",
-            "negative_prompt": "No futuristic elements. No neon lights. No other customers prominently staring at Liam.",
-            "generated_at": ""
-        },
-        {
-            "scene": 3,
-            "prompt": "Liam steps inside the café, greeted by the rich aroma of freshly brewed coffee. A friendly waiter in a white apron stands behind the counter, preparing drinks. There are a few customers seated, enjoying their meals.",
-            "negative_prompt": "No electronic menu boards. No crowded or chaotic atmosphere. No visible modern technology like digital cash registers.",
-            "generated_at": ""
-        },
-        {
-            "scene": 4,
-            "prompt": "Liam sits at a wooden table near the window, looking at the menu. The menu is handwritten on a chalkboard, listing coffee and pastries in elegant script.",
-            "negative_prompt": "No English text on the menu. No laminated or printed menus on the table. No cluttered or messy tables.",
-            "generated_at": ""
-        },
-        {
-            "scene": 5,
-            "prompt": "Close-up of the menu on the chalkboard, featuring the words 'Café con leche y churros' written in a decorative style. Liam's hand, holding a menu, is visible in the foreground.",
-            "negative_prompt": "No English words. No digital screens. No extra food items that aren't mentioned in the story.",
-            "generated_at": ""
-        },
-        {
             "scene": 6,
             "prompt": "Liam confidently places his order with a cheerful expression, speaking to the waiter. The waiter, a middle-aged man with a kind smile, listens attentively.",
             "negative_prompt": "No other customers interrupting. No Liam looking confused or uncertain.",
