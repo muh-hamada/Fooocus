@@ -41,9 +41,9 @@ def load_prompts(prompts_path):
 
 # Update the prompt with the generated_at field
 # Save the updated prompts to the prompts file
-def update_prompt(prompts, prompt, generated_at):
+def update_prompt(prompts, scene_nr, generated_at):
     for entry in prompts:
-        if entry['prompt'] == prompt:
+        if entry['scene'] == scene_nr:
             entry['generated_at'] = generated_at
             break
 
@@ -54,7 +54,7 @@ def update_prompt(prompts, prompt, generated_at):
 def get_task(args):
     return worker.AsyncTask(args=args)
 
-def generate_clicked(task: worker.AsyncTask):
+def generate_clicked(task: worker.AsyncTask, scene_nr):
     import ldm_patched.modules.model_management as model_management
 
     with model_management.interrupt_processing_mutex:
@@ -85,7 +85,7 @@ def generate_clicked(task: worker.AsyncTask):
                 # Upload images to the FastAPI server
                 for filepath in product:
                     if isinstance(filepath, str) and os.path.exists(filepath):
-                        upload_image(filepath)
+                        upload_image(filepath, scene_nr)
 
                 finished = True
 
@@ -100,10 +100,11 @@ def generate_clicked(task: worker.AsyncTask):
     return
 
 # Function to upload images to FastAPI server
-def upload_image(image_path):
+def upload_image(image_path, scene_nr):
     try:
         with open(image_path, "rb") as file:
-            response = requests.post(FASTAPI_SERVER_URL, files={"file": file})
+            # Send a POST request to the FastAPI server, send the scene number as a parameter
+            response = requests.post(FASTAPI_SERVER_URL, files={"file": file}, data={"scene_nr": scene_nr})
             if response.status_code == 200:
                 print(f"✅ Successfully uploaded {image_path}")
             else:
@@ -112,22 +113,28 @@ def upload_image(image_path):
         print(f"⚠️ Error uploading {image_path}: {e}")
 
 
-def process_prompt(prompt_text):
-    config = [False, prompt_text, 'saturated, high contrast, big nose', ['Fooocus V2', 'Fooocus Photograph', 'Fooocus Negative'], 'Quality', '1344×768 <span style="color: grey;"> ∣ 7:4</span>', 1, 'png', '3453121314987717455', False, 2, 3, 'animaPencilXL_v500.safetensors', 'None', 0.5, True, 'SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors', 0.25, True, 'None', 1, True, 'None', 1, True, 'None', 1, True, 'None', 1, False, 'uov', 'Disabled', None, [], None, '', None, False, False, False, False, 1.5, 0.8, 0.3, 7, 2, 'dpmpp_2m_sde_gpu', 'karras', 'Default (model)', -1, -1, -1, -1, -1, -1, False, False, False, False, 64, 128, 'joint', 0.25, False, 1.01, 1.02, 0.99, 0.95, False, False, 'v2.6', 1, 0.618, False, False, 0, False, False, 'fooocus', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', False, 0, False, None, True, 'Upscale (1.5x)', 'Before First Enhancement', 'Original Prompts', False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False]
+def process_prompt(prompt_config, common_prompt, common_negative_prompt):
+    print(f"Processing prompt nr: {prompt_config['scene']}")
+
+    final_prompt = f"{common_prompt}. {prompt_config['prompt']}"
+    final_negative_prompt = f"{common_negative_prompt}, saturated, high contrast, big nose. {prompt_config['negative_prompt']}"
+    config = [False, final_prompt, final_negative_prompt, ['Fooocus V2', 'Fooocus Photograph', 'Fooocus Negative'], 'Quality', '1344×768 <span style="color: grey;"> ∣ 7:4</span>', 1, 'png', '3453121314987717455', False, 2, 3, 'animaPencilXL_v500.safetensors', 'None', 0.5, True, 'SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors', 0.25, True, 'None', 1, True, 'None', 1, True, 'None', 1, True, 'None', 1, False, 'uov', 'Disabled', None, [], None, '', None, False, False, False, False, 1.5, 0.8, 0.3, 7, 2, 'dpmpp_2m_sde_gpu', 'karras', 'Default (model)', -1, -1, -1, -1, -1, -1, False, False, False, False, 64, 128, 'joint', 0.25, False, 1.01, 1.02, 0.99, 0.95, False, False, 'v2.6', 1, 0.618, False, False, 0, False, False, 'fooocus', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', False, 0, False, None, True, 'Upscale (1.5x)', 'Before First Enhancement', 'Original Prompts', False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False]
     task = get_task(config)
-    generate_clicked(task)
+    generate_clicked(task, entry['scene'])
 
 def main():
     # config = load_config(CONFIG_FILE)  # Load the configuration from the JSON file
-    prompts = load_prompts(PROMPTS_FILE)  # Load the prompts
+    data = load_prompts(PROMPTS_FILE)  # Load the prompts
+    promts = data['prompts']
+    common_prompt = data['common_prompt']
+    negative_common_prompt = data['negative_common_prompt']
 
     print("Processing prompts...")
     print(prompts)
 
     # Iterating over each prompt to process
     for entry in prompts:
-        prompt_text = entry['prompt']
-        process_prompt(prompt_text)
-        update_prompt(prompts, prompt_text, time.time())
+        process_prompt(entry, common_prompt, negative_common_prompt)
+        update_prompt(prompts, entry['scene'], time.time())
 
     print("All prompts have been processed.")

@@ -1,78 +1,90 @@
-[
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, crouches down next to a dense green bush in a park. She is wearing a yellow sweater, blue jeans, and white sneakers, with a blue backpack on her back. She gently parts the leaves with her small hands, her face showing curiosity. The golden sunlight filters through the trees, casting dappled shadows on the ground, which is covered in colorful autumn leaves. The park has a wooden bench in the background and a few birds flying in the sky.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, kneels beside a bush in a park, her hands gently parting the leaves. She is wearing a yellow sweater, blue jeans, and white sneakers, with a blue backpack resting on her back. A small gray kitten with big green eyes peers out from the bush, looking weak and slightly ruffled. The ground is covered in autumn leaves, and warm sunlight casts a golden glow on the scene. The park is peaceful, with trees and a wooden bench visible in the background.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, gently wraps a small gray kitten with big green eyes in her soft blue scarf. She is wearing a yellow sweater, blue jeans, and white sneakers. She holds the kitten close to her chest, looking down at it with a warm and caring expression. The autumn park setting is peaceful, with fallen leaves on the ground, a wooden bench in the distance, and golden sunlight filtering through the trees.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, walks along a narrow park path, holding a small gray kitten wrapped in a soft blue scarf. She is wearing a yellow sweater, blue jeans, and white sneakers, and carries a blue backpack over one shoulder. She looks down at the kitten with a gentle smile. The late afternoon sun casts a golden light on the autumn leaves that cover the ground. Tall trees with colorful foliage and a wooden bench are visible in the background.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, steps through the doorway of her cozy home, holding a small gray kitten wrapped in a soft blue scarf. She is wearing a yellow sweater, blue jeans, and white sneakers, with a blue backpack still on her back. Her mother, a kind-looking woman with shoulder-length brown hair, wearing a light green sweater, stands in the background, looking at Lena with a surprised expression. The home has wooden floors, a coat rack near the door, and warm lighting that creates a welcoming atmosphere.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, stands in the living room, holding a small gray kitten wrapped in a soft blue scarf. She is wearing a yellow sweater, blue jeans, and white sneakers. She looks up at her mother, a woman with shoulder-length brown hair wearing a light green sweater, with hopeful eyes as she explains why she wants to keep the kitten. The room has a cozy atmosphere, with bookshelves, a soft couch, and warm lighting.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, stands in the living room, holding a small gray kitten wrapped in a soft blue scarf. She is wearing a yellow sweater, blue jeans, and white sneakers. Her mother, a woman with shoulder-length brown hair wearing a light green sweater, stands with her arms crossed, looking at the kitten with a slightly hesitant expression. The room is warm and inviting, with bookshelves, a couch, and soft lighting.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, stands in the living room, holding a small gray kitten wrapped in a soft blue scarf. She is wearing a yellow sweater, blue jeans, and white sneakers. Her mother, a woman with shoulder-length brown hair wearing a light green sweater, stands with her arms crossed, looking at the kitten with a slightly hesitant expression. The room is warm and inviting, with bookshelves, a couch, and soft lighting.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, is in a small bathroom, gently washing a small gray kitten with big green eyes in a shallow white basin filled with warm water. She is wearing a yellow sweater with the sleeves rolled up, blue jeans, and white sneakers. Her expression is focused but caring as she carefully pours water over the kitten with her hand. The kitten looks slightly surprised but relaxed. The bathroom has soft lighting, light blue tiles, and a mirror reflecting the cozy scene.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, is in a cozy bathroom, gently drying a small gray kitten with big green eyes using a fluffy white towel. She is wearing a yellow sweater, blue jeans, and white sneakers. The kitten looks fluffy and content, blinking slowly as it nestles into the towel. The bathroom has soft, warm lighting, light blue tiles, and a small shelf with neatly folded towels.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, is sitting cross-legged on the wooden kitchen floor, watching with a smile as a small gray kitten with big green eyes drinks milk from a white bowl. She is wearing a yellow sweater, blue jeans, and white sneakers. The kitchen is cozy, with wooden cabinets, a warm yellow light overhead, and a checkered tablecloth on the dining table in the background.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, sits on her bed in her softly lit bedroom, looking at a small gray kitten with big green eyes curled up beside her. She is wearing a yellow sweater, blue jeans, and white sneakers. She says the name 'Milo' with a happy expression. The kitten lifts its head and blinks, as if recognizing its new name. The bedroom is cozy, with a soft blue blanket, fairy lights on the wall, and a small bookshelf in the corner.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, lies in bed under a soft blue blanket, with a small gray kitten with big green eyes curled up beside her, purring. She is wearing a yellow sweater and looking peaceful as she closes her eyes. The room is dimly lit with fairy lights glowing softly on the walls, and a small bedside table with a night lamp adds to the cozy atmosphere.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A small gray kitten with big green eyes sits near the front door of a cozy home, its tail curled around its body, looking toward the entrance expectantly. Sunlight streams through a nearby window, creating a bright and inviting atmosphere. The wooden floor reflects the morning light, and a pair of small white sneakers sits near the door, hinting that Lena will soon arrive.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, opens the front door of her home, stepping inside with a delighted smile. She is wearing a yellow sweater, blue jeans, and white sneakers, and carries a blue backpack over one shoulder. A small gray kitten with big green eyes runs toward her excitedly. The wooden floor of the entrance glows in the warm afternoon light, and a coat rack with jackets is visible in the background.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, sits on the soft living room rug, laughing as she dangles a string toy in front of a small gray kitten with big green eyes. The kitten leaps into the air, playfully trying to catch the string. She is wearing a yellow sweater, blue jeans, and white sneakers. The living room is cozy, with a couch, bookshelves, and a soft glow from a floor lamp in the background.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, sits on a cushioned chair near a window, reading a book. She is wearing a yellow sweater, blue jeans, and white sneakers. A small gray kitten with big green eyes is curled up on her lap, fast asleep. The sunlight streams through the window, casting a golden glow on the pages of her book. The scene is peaceful, with a wooden bookshelf filled with books in the background.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, sits at a wooden dining table with her mother, enjoying dinner. She is wearing a yellow sweater, blue jeans, and white sneakers. A small gray kitten with big green eyes sits on a nearby chair, watching them curiously. The room is warmly lit, with a checkered tablecloth, a plate of food in front of Lena, and a vase with flowers in the center of the table.",
-        "generated_at": ""
-    },
-    {
-        "prompt": "A 10-year-old girl named Lena, with shoulder-length brown hair, bright blue eyes, and fair skin, lies in bed, hugging a small gray kitten with big green eyes as they both fall asleep. She is wearing a soft yellow sweater, and a blue blanket covers them both. The fairy lights on the walls emit a gentle glow, and the room looks warm and peaceful. The kitten purrs happily, feeling safe and at home.",
-        "generated_at": ""
-    }
-]
+{
+    "common_prompt": "A young male traveler named Liam with short brown hair, light blue eyes, and a friendly smile. He wears a casual beige jacket over a white t-shirt, dark blue jeans, and brown leather shoes. The setting is a charming, rustic café in Madrid, with wooden tables, warm lighting, and a cozy atmosphere. The café has large windows letting in natural daylight, shelves lined with coffee cups, and a counter displaying various pastries. The weather is sunny and clear, indicating a pleasant afternoon.",
+    "negative_common_prompt": "No other travelers with similar appearances. No modern digital devices like laptops or tablets. No English text on signs or menus. No futuristic elements or neon lighting. No animals other than those specifically mentioned in the scene.",
+    "prompts": [
+        {
+            "scene": 1,
+            "prompt": "Liam walks along a sunny cobblestone street in Madrid, approaching a small café with a charming wooden sign hanging above the entrance. The street is lined with white and pastel-colored buildings with iron balconies adorned with potted plants.",
+            "negative_prompt": "No modern skyscrapers or cars. No other tourists carrying large backpacks. No rainy or cloudy weather.",
+            "generated_at": ""
+        },
+        {
+            "scene": 2,
+            "prompt": "Liam stands at the entrance of the café, looking at the cozy interior through the large window. The café has wooden tables and chairs, a chalkboard menu on the wall, and a glass display filled with pastries.",
+            "negative_prompt": "No futuristic elements. No neon lights. No other customers prominently staring at Liam.",
+            "generated_at": ""
+        },
+        {
+            "scene": 3,
+            "prompt": "Liam steps inside the café, greeted by the rich aroma of freshly brewed coffee. A friendly waiter in a white apron stands behind the counter, preparing drinks. There are a few customers seated, enjoying their meals.",
+            "negative_prompt": "No electronic menu boards. No crowded or chaotic atmosphere. No visible modern technology like digital cash registers.",
+            "generated_at": ""
+        },
+        {
+            "scene": 4,
+            "prompt": "Liam sits at a wooden table near the window, looking at the menu. The menu is handwritten on a chalkboard, listing coffee and pastries in elegant script.",
+            "negative_prompt": "No English text on the menu. No laminated or printed menus on the table. No cluttered or messy tables.",
+            "generated_at": ""
+        },
+        {
+            "scene": 5,
+            "prompt": "Close-up of the menu on the chalkboard, featuring the words 'Café con leche y churros' written in a decorative style. Liam's hand, holding a menu, is visible in the foreground.",
+            "negative_prompt": "No English words. No digital screens. No extra food items that aren't mentioned in the story.",
+            "generated_at": ""
+        },
+        {
+            "scene": 6,
+            "prompt": "Liam confidently places his order with a cheerful expression, speaking to the waiter. The waiter, a middle-aged man with a kind smile, listens attentively.",
+            "negative_prompt": "No other customers interrupting. No Liam looking confused or uncertain.",
+            "generated_at": ""
+        },
+        {
+            "scene": 7,
+            "prompt": "The waiter walks away with Liam's order, glancing back with a slightly amused expression. Liam relaxes, expecting a simple coffee.",
+            "negative_prompt": "No exaggerated reactions. No other customers interacting with Liam.",
+            "generated_at": ""
+        },
+        {
+            "scene": 8,
+            "prompt": "Liam waits at his table, looking out the window at the busy street outside. People walk past, and the sun casts warm light into the café.",
+            "negative_prompt": "No rainy or dark atmosphere. No distractions inside the café.",
+            "generated_at": ""
+        },
+        {
+            "scene": 9,
+            "prompt": "The waiter returns with a large plate filled with golden, crispy churros, along with a cup of coffee with milk. Liam's face shows surprise as he looks at the unexpected dish.",
+            "negative_prompt": "No other food items besides coffee and churros. No confused expression on the waiter's face.",
+            "generated_at": ""
+        },
+        {
+            "scene": 10,
+            "prompt": "Liam's eyes widen as he looks at the plate, realizing he ordered more than he expected. His coffee sits beside the plate, steaming gently.",
+            "negative_prompt": "No other dishes or drinks. No Liam looking scared or upset.",
+            "generated_at": ""
+        },
+        {
+            "scene": 11,
+            "prompt": "The waiter laughs warmly, explaining that churros are delicious and best eaten with chocolate. Liam listens, still surprised but curious.",
+            "negative_prompt": "No other customers laughing at Liam. No Liam looking embarrassed or ashamed.",
+            "generated_at": ""
+        },
+        {
+            "scene": 12,
+            "prompt": "Liam takes a bite of a churro, his face lighting up with delight. The crispy pastry is coated in sugar, and he dips it into a small cup of thick, warm chocolate.",
+            "negative_prompt": "No extra food items. No Liam looking disappointed.",
+            "generated_at": ""
+        },
+        {
+            "scene": 13,
+            "prompt": "Liam smiles, realizing his mistake was actually a great discovery. He enjoys his unexpected meal while sipping his coffee.",
+            "negative_prompt": "No visible distractions in the background. No Liam looking frustrated.",
+            "generated_at": ""
+        },
+        {
+            "scene": 14,
+            "prompt": "A final wide shot of the café, showing Liam happily eating his churros while the café atmosphere remains warm and inviting. The sunlight streams in through the windows.",
+            "negative_prompt": "No other customers staring directly at Liam. No futuristic elements in the café.",
+            "generated_at": ""
+        }
+    ]
+}
