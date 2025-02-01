@@ -82,10 +82,10 @@ def generate_clicked(task: worker.AsyncTask, scene_nr):
             if flag == 'results':
                 pass
             if flag == 'finish':
-                # Upload images to the FastAPI server
-                for filepath in product:
+                for idx, filepath in enumerate(product):
                     if isinstance(filepath, str) and os.path.exists(filepath):
-                        upload_image(filepath, scene_nr)
+                        scene_nr_with_idx = f"{scene_nr}-{idx}"
+                        upload_image(filepath, scene_nr_with_idx)
 
                 finished = True
 
