@@ -10,8 +10,8 @@
     "negative_common_prompt": "No modern technology, no anachronisms, no exaggerated cartoonish features, no futuristic elements.",
     "prompts": [
         {
-            "scene_nr": 88,
-            "prompt": "{character_1} sits at a wooden table inside {place_1}, waiting for his order, looking around at the cozy decorations.",
+            "scene_nr": 888,
+            "prompt": "character_1 sits at a wooden table inside place_1, waiting for his order, looking around at the cozy decorations.",
             "negative_prompt": "No other customers crowding the scene.",
             "generated_at": ""
         }
