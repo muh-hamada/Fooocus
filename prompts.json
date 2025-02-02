@@ -1,84 +1,102 @@
 {
     "characters": {
-        "character_1": "Liam, a young traveler with short brown hair and blue eyes, wearing a beige jacket over a white t-shirt and dark jeans. He has a curious and adventurous expression.",
-        "character_2": "A friendly café waiter wearing a white shirt and black apron. He has short dark hair and a professional but approachable demeanor."
+        "character_1": "Liam, a young adventurous traveler in his late 20s with short brown hair, green eyes, and light stubble. He wears a casual blue button-up shirt with rolled-up sleeves, beige cargo pants, and brown leather shoes. He carries a small backpack over one shoulder.",
+        "character_2": "Waiter, a middle-aged Spanish man with short black hair and a neatly trimmed beard. He wears a traditional white shirt, black vest, and black pants with a small notepad in his hand."
     },
     "places": {
-        "place_1": "A cozy Madrid café with warm lighting, wooden tables, a chalkboard menu written in Spanish, and large windows letting in golden sunlight.",
-        "place_2": "A charming Madrid street outside the café, featuring cobblestone pavement, warm-colored buildings with balconies, and people walking by."
+        "place_1": "A charming small café in Madrid with wooden tables and chairs, a warm and cozy atmosphere, and the aroma of fresh coffee and pastries filling the air. A large chalkboard menu hangs on the wall behind the counter, listing various coffee and pastry options. The walls are decorated with Spanish tiles and framed pictures.",
+        "place_2": "A lively street outside the café with cobblestone pavement, colorful Spanish buildings with balconies, and pedestrians walking by. There is a warm evening glow from street lamps."
     },
-    "negative_common_prompt": "No modern technology like laptops or smartphones. No animals or people unrelated to the story. No exaggerated expressions or unrealistic elements.",
+    "negative_common_prompt": "No modern technology, no anachronisms, no exaggerated cartoonish features, no futuristic elements.",
     "prompts": [
         {
             "scene_nr": 1,
-            "prompt": "character_1 is sitting at a table inside place_1, holding a menu with both hands and looking at it curiously.",
-            "negative_prompt": "No food or drinks on the table yet. No interaction with the waiter yet.",
+            "prompt": "{character_1} is arriving at {place_1}, looking around with curiosity. The café entrance is inviting, with a warm glow from inside and a wooden sign hanging above the door.",
+            "negative_prompt": "No other customers inside, no futuristic or modern elements.",
             "generated_at": ""
         },
         {
             "scene_nr": 2,
-            "prompt": "character_1 is smiling confidently as he prepares to order, still holding the menu.",
-            "negative_prompt": "No coffee or food on the table yet. No waiter in the scene yet.",
+            "prompt": "{character_1} stands at the entrance of {place_1}, taking in the rich aroma of coffee and pastries. He smiles as he breathes in the scent.",
+            "negative_prompt": "No other distractions, no bright neon lights.",
             "generated_at": ""
         },
         {
             "scene_nr": 3,
-            "prompt": "character_2 stands next to character_1's table in place_1, listening to his order. character_1 is speaking with enthusiasm, making a hand gesture.",
-            "negative_prompt": "No food or drinks on the table yet.",
+            "prompt": "{character_1} walks inside {place_1}, looking around at the wooden tables, framed pictures on the walls, and the large chalkboard menu.",
+            "negative_prompt": "No futuristic elements, no crowded scenes.",
             "generated_at": ""
         },
         {
             "scene_nr": 4,
-            "prompt": "character_2 raises an eyebrow slightly but nods and writes down the order on a small notepad.",
-            "negative_prompt": "No food or drinks on the table yet. No other customers interacting.",
+            "prompt": "{character_1} stands at the counter of {place_1}, reading the chalkboard menu with a thoughtful expression.",
+            "negative_prompt": "No digital screens, no baristas wearing headphones.",
             "generated_at": ""
         },
         {
             "scene_nr": 5,
-            "prompt": "character_1 sits patiently in place_1, looking around while waiting for his order. His hands are resting on the wooden table.",
-            "negative_prompt": "No food or drinks on the table yet.",
+            "prompt": "{character_1} in {place_1} sees ‘coffee with milk and churros’ on the menu and looks slightly puzzled, thinking about the word ‘churros.’",
+            "negative_prompt": "No exaggerated facial expressions, no unnecessary background characters.",
             "generated_at": ""
         },
         {
             "scene_nr": 6,
-            "prompt": "character_2 returns with a tray carrying a steaming cup of coffee and a large plate piled with golden, crispy churros.",
-            "negative_prompt": "No other food besides churros and coffee. No exaggerated reactions yet.",
+            "prompt": "{character_1} confidently orders ‘one coffee with milk and lots of churros’ while smiling in {place_1}.",
+            "negative_prompt": "No incorrect uniforms on the waiter, no overly large or futuristic elements.",
             "generated_at": ""
         },
         {
             "scene_nr": 7,
-            "prompt": "character_1's eyes widen in surprise as he looks at the massive plate of churros in front of him. He wasn’t expecting this!",
-            "negative_prompt": "No other food besides churros and coffee. No interaction with the waiter yet.",
+            "prompt": "{character_2} raises an eyebrow slightly but nods while writing down the order in {place_1}.",
+            "negative_prompt": "No exaggerated expressions, no digital screens.",
             "generated_at": ""
         },
         {
             "scene_nr": 8,
-            "prompt": "character_2, with a friendly smile, gestures toward the churros and suggests trying them with chocolate.",
-            "negative_prompt": "No other customers interacting. No additional dishes on the table.",
+            "prompt": "{character_1} sits at a wooden table inside {place_1}, waiting for his order, looking around at the cozy decorations.",
+            "negative_prompt": "No other customers crowding the scene.",
             "generated_at": ""
         },
         {
             "scene_nr": 9,
-            "prompt": "character_1, still surprised but curious, dips a churro into a small cup of chocolate sauce and takes a bite.",
-            "negative_prompt": "No excessive mess. No other food besides churros and coffee.",
+            "prompt": "in {place_1}, {character_2} approaching with a tray carrying a cup of coffee and a large plate stacked with churros.",
+            "negative_prompt": "No incorrect waiter uniform, no other customers in focus.",
             "generated_at": ""
         },
         {
             "scene_nr": 10,
-            "prompt": "character_1's face lights up with delight as he enjoys the taste of the churro with chocolate.",
-            "negative_prompt": "No exaggerated or unrealistic reactions. No other distractions in place_1.",
+            "prompt": "{character_1} sits in {place_1} looks shocked and wide-eyed as he sees the enormous plate of churros placed before him.",
+            "negative_prompt": "No cartoonish exaggerations, no unrealistic food proportions.",
             "generated_at": ""
         },
         {
             "scene_nr": 11,
-            "prompt": "character_1, now more relaxed, takes a sip of his coffee, still smiling after his unexpected but delicious mistake.",
-            "negative_prompt": "No other drinks besides coffee. No other people interacting in the scene.",
+            "prompt": "{character_2} laughs and gestures toward the churros in {place_1}",
+            "negative_prompt": "No modern distractions, no background crowd noise.",
             "generated_at": ""
         },
         {
             "scene_nr": 12,
-            "prompt": "character_1 leans back in his chair in place_1, satisfied, looking at the churros and realizing this was the best mistake he ever made.",
-            "negative_prompt": "No unfinished food on the plate. No distractions in the background.",
+            "prompt": "{character_1} sits in {place_1} picks up a churro, dips it in chocolate, and takes a bite, his face lighting up with delight.",
+            "negative_prompt": "No unrealistic expressions, no unnecessary background elements.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 13,
+            "prompt": "{character_1} leans back in his chair, grinning and savoring the churros in {place_1}, realizing this was the best mistake ever.",
+            "negative_prompt": "No futuristic elements, no distractions in the scene.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 14,
+            "prompt": "{character_1} leaves {place_1}, stepping onto {place_2}, looking happy and satisfied.",
+            "negative_prompt": "No crowded streets, no modern advertisements.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 15,
+            "prompt": "{character_1} walks down {place_2}, thinking about his funny ordering mistake and smiling.",
+            "negative_prompt": "No mobile phones, no futuristic elements.",
             "generated_at": ""
         }
     ]
