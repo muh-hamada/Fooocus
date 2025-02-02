@@ -43,7 +43,7 @@ def load_prompts(prompts_path):
 # Save the updated prompts to the prompts file
 def update_prompt(data, scene_nr, generated_at):
     for entry in data['prompts']:
-        if entry['scene'] == scene_nr:
+        if entry['scene_nr'] == scene_nr:
             entry['generated_at'] = generated_at
             break
 
@@ -113,28 +113,59 @@ def upload_image(image_path, scene_nr):
         print(f"⚠️ Error uploading {image_path}: {e}")
 
 
-def process_prompt(prompt_config, common_prompt, common_negative_prompt):
-    print(f"Processing prompt nr: {prompt_config['scene']}")
+def process_prompt(prompt_config, data):
+    print(f"Processing prompt nr: {prompt_config['scene_nr']}")
 
-    final_prompt = f"{common_prompt} {prompt_config['prompt']}"
-    final_negative_prompt = f"{common_negative_prompt} {prompt_config['negative_prompt']} Saturated, high contrast, big nose."
+
+    # Finalize the prompts
+    final_prompts = finalize_prompts(prompt_config, data)
+    final_prompt = final_prompts["prompt"]
+    final_negative_prompt = final_prompts["negative_prompt"]
+
+    print(f"Final prompt: {final_prompt}")
+    print(f"Final negative prompt: {final_negative_prompt}")
+
     config = [False, final_prompt, final_negative_prompt, ['Fooocus V2', 'Fooocus Photograph', 'Fooocus Negative'], 'Quality', '1344×768 <span style="color: grey;"> ∣ 7:4</span>', 1, 'png', '3453121314987717455', False, 2, 3, 'animaPencilXL_v500.safetensors', 'None', 0.5, True, 'SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors', 0.25, True, 'None', 1, True, 'None', 1, True, 'None', 1, True, 'None', 1, False, 'uov', 'Disabled', None, [], None, '', None, False, False, False, False, 1.5, 0.8, 0.3, 7, 2, 'dpmpp_2m_sde_gpu', 'karras', 'Default (model)', -1, -1, -1, -1, -1, -1, False, False, False, False, 64, 128, 'joint', 0.25, False, 1.01, 1.02, 0.99, 0.95, False, False, 'v2.6', 1, 0.618, False, False, 0, False, False, 'fooocus', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', False, 0, False, None, True, 'Upscale (1.5x)', 'Before First Enhancement', 'Original Prompts', False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False]
     task = get_task(config)
-    generate_clicked(task, prompt_config['scene'])
+    generate_clicked(task, prompt_config['scene_nr'])
+
+
+def finalize_prompts(prompt_config, data):
+    final_prompt = prompt_config["prompt"]
+    final_negative_prompt = prompt_config["negative_prompt"]
+    negative_common_prompt = data["negative_common_prompt"]
+
+    # Load the characters and places from the data
+    characters = data["characters"]
+    places = data["places"]
+
+    # Replace character placeholders
+    for placeholder, description in characters.items():
+        final_prompt = final_prompt.replace(placeholder, description)
+
+    # Replace place placeholders
+    for placeholder, description in places.items():
+        final_prompt = final_prompt.replace(placeholder, description)
+
+    # Merge common negative prompts
+    final_negative_prompt = f"{negative_common_prompt} {final_negative_prompt}"
+
+    return {
+        "prompt": final_prompt,
+        "negative_prompt": final_negative_prompt
+    }
 
 def main():
     # config = load_config(CONFIG_FILE)  # Load the configuration from the JSON file
     data = load_prompts(PROMPTS_FILE)  # Load the prompts
     prompts = data['prompts']
-    common_prompt = data['common_prompt']
-    negative_common_prompt = data['negative_common_prompt']
 
     print("Processing prompts...")
     print(prompts)
 
     # Iterating over each prompt to process
     for entry in prompts:
-        process_prompt(entry, common_prompt, negative_common_prompt)
-        update_prompt(data, entry['scene'], time.time())
+        process_prompt(entry, data)
+        update_prompt(data, entry['scene_nr'], time.time())
 
     print("All prompts have been processed.")

@@ -1,76 +1,83 @@
 {
-    "common_prompt": "Liam, a young traveler with short brown hair and blue eyes, wearing a beige jacket over a white t-shirt, sits in a cozy Madrid café. The café has warm lighting, wooden tables, a chalkboard menu in Spanish, and large windows letting in golden sunlight.",
-    "negative_common_prompt": "No other characters besides the waiter and Liam. No modern technology like laptops or smartphones. No dogs or other animals besides what’s specifically mentioned.",
+    "characters": {
+        "character_1": "Liam, a young traveler with short brown hair and blue eyes, wearing a beige jacket over a white t-shirt and dark jeans. He has a curious and adventurous expression.",
+        "character_2": "A friendly café waiter wearing a white shirt and black apron. He has short dark hair and a professional but approachable demeanor."
+    },
+    "places": {
+        "place_1": "A cozy Madrid café with warm lighting, wooden tables, a chalkboard menu written in Spanish, and large windows letting in golden sunlight.",
+        "place_2": "A charming Madrid street outside the café, featuring cobblestone pavement, warm-colored buildings with balconies, and people walking by."
+    },
+    "negative_common_prompt": "No modern technology like laptops or smartphones. No animals or people unrelated to the story. No exaggerated expressions or unrealistic elements.",
     "prompts": [
         {
-            "scene": 1,
-            "prompt": "Liam is holding a menu with both hands, looking at it curiously.",
+            "scene_nr": 1,
+            "prompt": "character_1 is sitting at a table inside place_1, holding a menu with both hands and looking at it curiously.",
             "negative_prompt": "No food or drinks on the table yet. No interaction with the waiter yet.",
             "generated_at": ""
         },
         {
-            "scene": 2,
-            "prompt": "Liam is smiling confidently as he prepares to order, still holding the menu.",
+            "scene_nr": 2,
+            "prompt": "character_1 is smiling confidently as he prepares to order, still holding the menu.",
             "negative_prompt": "No coffee or food on the table yet. No waiter in the scene yet.",
             "generated_at": ""
         },
         {
-            "scene": 3,
-            "prompt": "The waiter, wearing a white shirt and black apron, stands next to Liam’s table, listening to his order. Liam is speaking with enthusiasm, making a hand gesture.",
+            "scene_nr": 3,
+            "prompt": "character_2 stands next to character_1's table in place_1, listening to his order. character_1 is speaking with enthusiasm, making a hand gesture.",
             "negative_prompt": "No food or drinks on the table yet.",
             "generated_at": ""
         },
         {
-            "scene": 4,
-            "prompt": "The waiter raises an eyebrow slightly but nods and writes down the order on a small notepad.",
+            "scene_nr": 4,
+            "prompt": "character_2 raises an eyebrow slightly but nods and writes down the order on a small notepad.",
             "negative_prompt": "No food or drinks on the table yet. No other customers interacting.",
             "generated_at": ""
         },
         {
-            "scene": 5,
-            "prompt": "Liam sits patiently, looking around the café while waiting for his order. His hands are resting on the wooden table.",
+            "scene_nr": 5,
+            "prompt": "character_1 sits patiently in place_1, looking around while waiting for his order. His hands are resting on the wooden table.",
             "negative_prompt": "No food or drinks on the table yet.",
             "generated_at": ""
         },
         {
-            "scene": 6,
-            "prompt": "The waiter returns with a tray carrying a steaming cup of coffee and a large plate piled with golden, crispy churros.",
+            "scene_nr": 6,
+            "prompt": "character_2 returns with a tray carrying a steaming cup of coffee and a large plate piled with golden, crispy churros.",
             "negative_prompt": "No other food besides churros and coffee. No exaggerated reactions yet.",
             "generated_at": ""
         },
         {
-            "scene": 7,
-            "prompt": "Liam’s eyes widen in surprise as he looks at the massive plate of churros in front of him. He wasn’t expecting this!",
+            "scene_nr": 7,
+            "prompt": "character_1's eyes widen in surprise as he looks at the massive plate of churros in front of him. He wasn’t expecting this!",
             "negative_prompt": "No other food besides churros and coffee. No interaction with the waiter yet.",
             "generated_at": ""
         },
         {
-            "scene": 8,
-            "prompt": "The waiter, with a friendly smile, gestures toward the churros and suggests trying them with chocolate.",
+            "scene_nr": 8,
+            "prompt": "character_2, with a friendly smile, gestures toward the churros and suggests trying them with chocolate.",
             "negative_prompt": "No other customers interacting. No additional dishes on the table.",
             "generated_at": ""
         },
         {
-            "scene": 9,
-            "prompt": "Liam, still surprised but curious, dips a churro into a small cup of chocolate sauce and takes a bite.",
+            "scene_nr": 9,
+            "prompt": "character_1, still surprised but curious, dips a churro into a small cup of chocolate sauce and takes a bite.",
             "negative_prompt": "No excessive mess. No other food besides churros and coffee.",
             "generated_at": ""
         },
         {
-            "scene": 10,
-            "prompt": "Liam’s face lights up with delight as he enjoys the taste of the churro with chocolate.",
-            "negative_prompt": "No exaggerated or unrealistic reactions. No other distractions in the café.",
+            "scene_nr": 10,
+            "prompt": "character_1's face lights up with delight as he enjoys the taste of the churro with chocolate.",
+            "negative_prompt": "No exaggerated or unrealistic reactions. No other distractions in place_1.",
             "generated_at": ""
         },
         {
-            "scene": 11,
-            "prompt": "Liam, now more relaxed, takes a sip of his coffee, still smiling after his unexpected but delicious mistake.",
+            "scene_nr": 11,
+            "prompt": "character_1, now more relaxed, takes a sip of his coffee, still smiling after his unexpected but delicious mistake.",
             "negative_prompt": "No other drinks besides coffee. No other people interacting in the scene.",
             "generated_at": ""
         },
         {
-            "scene": 12,
-            "prompt": "Liam leans back in his chair, satisfied, looking at the churros and realizing this was the best mistake he ever made.",
+            "scene_nr": 12,
+            "prompt": "character_1 leans back in his chair in place_1, satisfied, looking at the churros and realizing this was the best mistake he ever made.",
             "negative_prompt": "No unfinished food on the plate. No distractions in the background.",
             "generated_at": ""
         }
