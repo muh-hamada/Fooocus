@@ -9,10 +9,12 @@
     },
     "negative_common_prompt": "No modern technology, no anachronisms, no exaggerated cartoonish features, no futuristic elements.",
     "prompts": [
+       
+    
         {
-            "scene_nr": 8888,
-            "prompt": "character_1 sits at a wooden table inside place_1.",
-            "negative_prompt": "No other customers crowding the scene.",
+            "scene_nr": 1444,
+            "prompt": "{character_1} stepping onto {place_2}, looking happy and satisfied.",
+            "negative_prompt": "No crowded streets, no modern advertisements.",
             "generated_at": ""
         }
     ]
