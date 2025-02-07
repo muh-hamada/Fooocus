@@ -5,6 +5,7 @@
     },
     "places": {
         "cairo_airport": "A bustling airport exterior with taxis and travelers. The background features modern airport signage, palm trees, and a warm, golden sky. The pavement is well-maintained, with clear lane markings for taxis and buses. No texts are visible.",
+        "cairo_airport_inside": "A modern airport interior with travelers. The background features modern airport interior design",
         "cairo_street": "A chaotic urban street filled with honking cars, yellow taxis, motorcycles, and donkey carts. Buildings in the background are a mix of modern and traditional architecture, with beige and pastel-colored facades. The streets are lined with small shops.",
         "pyramids_pizza": "A small, vibrant pizza restaurant with a bright red sign reading 'Pyramids Pizza' in bold white letters. The front has large glass windows showing people inside enjoying pizza. The surrounding area is busy, with people walking and cars passing by.",
         "pyramids_mall": "A large, modern shopping mall with a sleek, glass-fronted exterior. The mall entrance has a bold golden sign reading 'Pyramids Mall.' Shoppers can be seen walking in and out, and a parking lot full of cars is in the foreground.",
@@ -14,7 +15,7 @@
     "prompts": [
         {
             "scene_nr": 1,
-            "prompt": "happy jack inside the cairo_airport",
+            "prompt": "happy jack inside the cairo_airport_inside",
             "negative_prompt": "No incorrect airport signage. No text. No airport name.",
             "generated_at": ""
         },
