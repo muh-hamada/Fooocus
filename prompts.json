@@ -8,13 +8,13 @@
         "cairo_street": "A chaotic urban street filled with honking cars, yellow taxis, motorcycles, and donkey carts. Buildings in the background are a mix of modern and traditional architecture, with beige and pastel-colored facades. The streets are lined with small shops.",
         "pyramids_pizza": "A small, vibrant pizza restaurant with a bright red sign reading 'Pyramids Pizza' in bold white letters. The front has large glass windows showing people inside enjoying pizza. The surrounding area is busy, with people walking and cars passing by.",
         "pyramids_mall": "A large, modern shopping mall with a sleek, glass-fronted exterior. The mall entrance has a bold golden sign reading 'Pyramids Mall.' Shoppers can be seen walking in and out, and a parking lot full of cars is in the foreground.",
-        "giza_pyramids": "The vast desert landscape of Giza, featuring the towering Great Pyramids in the background. The sand is golden and warm, with occasional camel footprints. A few scattered tourists are visible in the distance, along with a camel nearby. The sky is clear blue with a few wispy clouds."
+        "giza_pyramids": "The vast desert landscape of Giza, featuring a single Great Pyramid in the background. The sand is golden and warm, with occasional camel footprints. A few scattered tourists are visible in the distance. The sky is clear blue with a few wispy clouds."
     },
     "negative_common_prompt": "No futuristic elements, no anachronisms, no sunglasses, no overly modern vehicles, no incorrect signs, no nighttime scenes, no additional characters unless specified.",
     "prompts": [
         {
             "scene_nr": 1,
-            "prompt": "cairo_airport",
+            "prompt": "happy jack inside the cairo_airport",
             "negative_prompt": "No incorrect airport signage. No text. No airport name.",
             "generated_at": ""
         },
@@ -26,7 +26,7 @@
         },
         {
             "scene_nr": 16,
-            "prompt": "amused face of jack rolls his eyes with giza_pyramids in the background",
+            "prompt": "confused face of jack rolls his eyes with giza_pyramids in the background",
             "negative_prompt": "No modern ice cream carts, No multiple camels, no multiple pyramids.",
             "generated_at": ""
         }
