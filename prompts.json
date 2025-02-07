@@ -14,98 +14,20 @@
     "prompts": [
         {
             "scene_nr": 1,
-            "prompt": "jack stands outside cairo_airport",
-            "negative_prompt": "No incorrect airport signage, no empty background, no futuristic elements. No text",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 2,
-            "prompt": "jack points to a taxi in front of cairo_airport",
-            "negative_prompt": "No incorrect gestures from the driver, no background distractions.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 3,
-            "prompt": "taxi_driver in front of cairo_airport who smiles",
-            "negative_prompt": "No incorrect gestures from the driver, no background distractions.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 4,
-            "prompt": "jack sits inside a moving taxi, gripping his seatbelt as the car weaves through cairo_street",
-            "negative_prompt": "No futuristic cars, no empty roads, no nighttime setting.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 5,
-            "prompt": "The taxi stops in front of pyramids_pizza. jack looks out the window, confused",
-            "negative_prompt": "No ancient-looking buildings, no nighttime setting, no other restaurant names.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 6,
-            "prompt": "jack steps out of the taxi, frustrated. He waves his arms and mimics a pyramid shape with his hands in front of pyramids_pizza",
-            "negative_prompt": "No unnecessary bystanders, no exaggerated emotions.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 7,
-            "prompt": "jack sits inside a moving taxi as the car weaves through cairo_street",
-            "negative_prompt": "No futuristic cars, no empty roads, no nighttime setting.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 8,
-            "prompt": "The taxi stops in front of pyramids_mall. jack stares and rubbing his forehead in disbelief.",
-            "negative_prompt": "No ancient elements, no incorrect mall names.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 9,
-            "prompt": "jack makes exaggerated hand gestures, mimicking a camel in front of pyramids_mall",
-            "negative_prompt": "No unnecessary distractions in the background.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 10,
-            "prompt": "The taxi in front of giza_pyramids. {jack} steps out, eyes wide in awe as he gazes at the majestic pyramids in the distance.",
-            "negative_prompt": "No incorrect proportions of the pyramids, no missing desert setting.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 11,
-            "prompt": "jack eyes wide in awe as he gazes giza_pyramids",
-            "negative_prompt": "No incorrect proportions of the pyramids, no missing desert setting.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 12,
-            "prompt": "jack taking a deep breath, feeling the warm desert air in front of giza_pyramids",
-            "negative_prompt": "No futuristic elements, no modern structures nearby.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 13,
-            "prompt": "A camel nudges jack from behind, making him stumble forward in front of giza_pyramids",
-            "negative_prompt": "No missing camel details, no modern elements.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 14,
-            "prompt": "jack reluctantly climbs onto the camel, gripping the saddle tightly in giza_pyramids",
-            "negative_prompt": "No futuristic details, no incorrect saddle design.",
+            "prompt": "cairo_airport",
+            "negative_prompt": "No incorrect airport signage. No text. No airport name.",
             "generated_at": ""
         },
         {
             "scene_nr": 15,
-            "prompt": "The camel sways forward as jack looks both excited and uneasy, with the giza_pyramids in the background.",
-            "negative_prompt": "No incorrect camel riding position, no modern distractions.",
+            "prompt": "A Camel with the giza_pyramids in the background.",
+            "negative_prompt": "No incorrect camel riding position, no modern distractions. No multiple camels, no multiple pyramids.",
             "generated_at": ""
         },
         {
             "scene_nr": 16,
-            "prompt": "jack rolls his eyes with camel and giza_pyramids in the background",
-            "negative_prompt": "No modern ice cream carts, no unnecessary background noise.",
+            "prompt": "amused face of jack rolls his eyes with giza_pyramids in the background",
+            "negative_prompt": "No modern ice cream carts, No multiple camels, no multiple pyramids.",
             "generated_at": ""
         }
     ]
