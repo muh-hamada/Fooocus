@@ -5,7 +5,7 @@
     },
     "places": {
         "cairo_airport": "A bustling airport exterior with taxis and travelers. The background features modern airport signage, palm trees, and a warm, golden sky. The pavement is well-maintained, with clear lane markings for taxis and buses. No texts are visible.",
-        "inside_cairo_airport": "A busy airport interior with travelers and luggage. The space is filled with modern airport amenities like check-in counters, security gates, and departure boards. The lighting is bright and the atmosphere is bustling with activity.",
+        "inside_the_airport": "A busy airport interior with travelers and luggage. The space is filled with modern airport amenities like check-in counters, security gates, and departure boards. The lighting is bright and the atmosphere is bustling with activity.",
         "cairo_street": "A chaotic urban street filled with honking cars, yellow taxis, motorcycles. Buildings in the background are a mix of modern and traditional architecture, with beige and pastel-colored facades. The streets are lined with small shops.",
         "pyramids_pizza": "A small, vibrant pizza restaurant. The front has large glass windows showing people inside enjoying pizza. The surrounding area is busy, with people walking and cars passing by.",
         "pyramids_mall": "A large, modern shopping mall with a sleek, glass-fronted exterior. Shoppers can be seen walking in and out, and a parking lot full of cars is in the foreground.",
@@ -15,43 +15,13 @@
     "prompts": [
         {
             "scene_nr": 1,
-            "prompt": "inside_cairo_airport",
+            "prompt": "inside_the_airport",
             "negative_prompt": "No incorrect airport signage. No text. No airport name.",
             "generated_at": ""
         },
         {
-            "scene_nr": 2,
-            "prompt": "jack in front of cairo_airport",
-            "negative_prompt": "No incorrect gestures from the driver, no background distractions.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 3,
-            "prompt": "a smiling taxi_driver in front of cairo_airport",
-            "negative_prompt": "No incorrect gestures from the driver, no background distractions.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 4,
-            "prompt": "jack sits inside a moving taxi through cairo_street",
-            "negative_prompt": "No futuristic cars, no empty roads, no nighttime setting.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 5,
-            "prompt": "jack looks confused, with background of pyramids_pizza",
-            "negative_prompt": "No ancient-looking buildings, no nighttime setting, no other restaurant names.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 6,
-            "prompt": "a frustrated jack in front of a taxi in cairo_street",
-            "negative_prompt": "No unnecessary bystanders, no exaggerated emotions.",
-            "generated_at": ""
-        },
-        {
             "scene_nr": 7,
-            "prompt": "jack sits inside a taxi in cairo_street",
+            "prompt": "jack sits inside a taxi",
             "negative_prompt": "No futuristic cars, no empty roads, no nighttime setting.",
             "generated_at": ""
         },
