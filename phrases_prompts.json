@@ -1,54 +1,6 @@
 {
     "prompts": [
         {
-            "scene_nr": 1,
-            "phrase": "Excuse me, where can I buy a ticket?",
-            "explanation": "A traveler is at the train station and needs to purchase a ticket but doesn't know where to go.",
-            "prompt": "A traveler stands near the entrance of a train station with train schedules, and an information desk in the background.",
-            "negative_prompt": "Empty station, futuristic setting, unrealistic lighting.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 2,
-            "phrase": "How much is a one-way ticket to Berlin?",
-            "explanation": "A traveler is at the ticket counter asking about the price for a one-way trip to Berlin.",
-            "prompt": "A traveler is standing at a ticket counter, They are holding their wallet at a train station.",
-            "negative_prompt": "Crowded area, blurry signs, unrecognizable text.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 3,
-            "phrase": "Which platform does the train to Munich leave from?",
-            "explanation": "A traveler wants to know which platform their train to Munich departs from.",
-            "prompt": "A traveler holding a train ticket on a train departure platform",
-            "negative_prompt": "Unclear signs, empty station, unrealistic colors.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 4,
-            "phrase": "Is this seat taken?",
-            "explanation": "A passenger is boarding a train and wants to know if they can sit in an empty seat.",
-            "prompt": "Inside a modern train carriage, a passenger stands near an empty seat",
-            "negative_prompt": "Old-fashioned train, empty carriage, no human interaction.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 5,
-            "phrase": "Does this train go to Frankfurt?",
-            "explanation": "A traveler is confirming that they are boarding the correct train to Frankfurt.",
-            "prompt": "A male traveler standing next to an open train door is on the platform",
-            "negative_prompt": "Unrealistic uniforms, futuristic setting, no passengers.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 6,
-            "phrase": "The train is delayed by 30 minutes.",
-            "explanation": "An announcement informs passengers that the train will arrive later than scheduled.",
-            "prompt": "A digital display in a busy train station",
-            "negative_prompt": "Empty station, unrealistic delay times, outdated screens.",
-            "generated_at": ""
-        },
-        {
             "scene_nr": 7,
             "phrase": "Can I change my ticket to a later train?",
             "explanation": "A passenger wants to modify their ticket for a different train.",
