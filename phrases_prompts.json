@@ -5,105 +5,105 @@
             "phrase": "Do you have a table for two?",
             "explanation": "A customer asks the host if there is an available table for two people.",
             "prompt": "A restaurant entrance with a host and two customers asking for a table.",
-            "negative_prompt": "blurry details, unrealistic lighting, distorted faces, strange objects"
+            "negative_prompt": "alcohol bottles, alcohol glass, blurry details, unrealistic lighting, distorted faces, strange objects"
         },
         {
             "scene_nr": 2,
             "phrase": "Could we see the menu, please?",
             "explanation": "A customer asks the waiter for the menu before ordering.",
             "prompt": "A customer sitting at a restaurant table asking for the menu from a waiter.",
-            "negative_prompt": "blurry text, exaggerated expressions, unusual hand positions"
+            "negative_prompt": "alcohol bottles, alcohol glass, blurry text, exaggerated expressions, unusual hand positions"
         },
         {
             "scene_nr": 3,
             "phrase": "I’d like to order the steak, medium rare.",
             "explanation": "A customer specifies their order and how they want it cooked.",
             "prompt": "A customer ordering food from a waiter in a restaurant.",
-            "negative_prompt": "distorted plates, unrealistic food colors, incorrect hand gestures"
+            "negative_prompt": "alcohol bottles, alcohol glass, distorted plates, unrealistic food colors, incorrect hand gestures"
         },
         {
             "scene_nr": 4,
             "phrase": "Could you recommend a dish?",
             "explanation": "A customer asks the waiter for a food recommendation.",
             "prompt": "A waiter suggesting a dish to a customer in a restaurant.",
-            "negative_prompt": "confusing background, awkward facial expressions, unnatural hand movements"
+            "negative_prompt": "alcohol bottles, alcohol glass, confusing background, awkward facial expressions, unnatural hand movements"
         },
         {
             "scene_nr": 5,
             "phrase": "Excuse me, I think this dish is cold.",
             "explanation": "A customer informs the waiter that their food is not warm enough.",
             "prompt": "A customer politely pointing out to a waiter that their dish is cold.",
-            "negative_prompt": "angry faces, aggressive gestures, strange plate designs"
+            "negative_prompt": "alcohol bottles, alcohol glass, angry faces, aggressive gestures, strange plate designs"
         },
         {
             "scene_nr": 6,
             "phrase": "Could we have some extra napkins, please?",
             "explanation": "A customer asks for additional napkins at their table.",
             "prompt": "A customer asking a waiter for extra napkins in a restaurant.",
-            "negative_prompt": "messy background, oversized napkins, unnatural seating positions"
+            "negative_prompt": "alcohol bottles, alcohol glass, messy background, oversized napkins, unnatural seating positions"
         },
         {
             "scene_nr": 7,
             "phrase": "I have a food allergy. Does this contain nuts?",
             "explanation": "A customer asks if a dish contains an ingredient they are allergic to.",
             "prompt": "A concerned customer asking a waiter about food ingredients.",
-            "negative_prompt": "exaggerated worry, unrealistic food textures, distracting details"
+            "negative_prompt": "alcohol bottles, alcohol glass, exaggerated worry, unrealistic food textures, distracting details"
         },
         {
             "scene_nr": 8,
             "phrase": "Could we split the bill, please?",
             "explanation": "A group of customers asks to divide the bill between them.",
             "prompt": "Friends at a restaurant table asking a waiter to split the bill.",
-            "negative_prompt": "awkward hand placements, oversized menus, unrealistic currency details"
+            "negative_prompt": "alcohol bottles, alcohol glass, awkward hand placements, oversized menus, unrealistic currency details"
         },
         {
             "scene_nr": 9,
             "phrase": "May I have a glass of water, please?",
             "explanation": "A customer requests a glass of water from the waiter.",
             "prompt": "A customer in a restaurant politely asking for a glass of water.",
-            "negative_prompt": "unusual water color, distorted glass shapes, confusing hand positions"
+            "negative_prompt": "alcohol bottles, alcohol glass, unusual water color, distorted glass shapes, confusing hand positions"
         },
         {
             "scene_nr": 10,
             "phrase": "Excuse me, we’ve been waiting for a while.",
             "explanation": "A customer politely informs the waiter that their order is taking too long.",
             "prompt": "A customer signaling a waiter and mentioning a long wait time.",
-            "negative_prompt": "angry expressions, chaotic background, unnatural body positions"
+            "negative_prompt": "alcohol bottles, alcohol glass, angry expressions, chaotic background, unnatural body positions"
         },
         {
             "scene_nr": 11,
             "phrase": "This isn’t what I ordered.",
             "explanation": "A customer tells the waiter that they received the wrong dish.",
             "prompt": "A confused customer showing a waiter that their order is incorrect.",
-            "negative_prompt": "aggressive reactions, unrealistic food, unnecessary clutter"
+            "negative_prompt": "alcohol bottles, alcohol glass, aggressive reactions, unrealistic food, unnecessary clutter"
         },
         {
             "scene_nr": 12,
             "phrase": "Could we have the check, please?",
             "explanation": "A customer asks for the bill at the end of their meal.",
             "prompt": "A customer in a restaurant asking a waiter for the check.",
-            "negative_prompt": "oversized check, strange hand gestures, overly dramatic facial expressions"
+            "negative_prompt": "alcohol bottles, alcohol glass, oversized check, strange hand gestures, overly dramatic facial expressions"
         },
         {
             "scene_nr": 13,
             "phrase": "That was delicious! My compliments to the chef.",
             "explanation": "A satisfied customer expresses appreciation for the meal.",
             "prompt": "A happy customer in a restaurant complimenting the food.",
-            "negative_prompt": "awkward smiles, unrealistic food details, odd hand placements"
+            "negative_prompt": "alcohol bottles, alcohol glass, awkward smiles, unrealistic food details, odd hand placements"
         },
         {
             "scene_nr": 14,
             "phrase": "Can I get this to go?",
             "explanation": "A customer asks for their leftover food to be packed for takeaway.",
             "prompt": "A customer in a restaurant asking for a takeaway box.",
-            "negative_prompt": "weird food textures, oversized containers, chaotic table settings"
+            "negative_prompt": "alcohol bottles, alcohol glass, weird food textures, oversized containers, chaotic table settings"
         },
         {
             "scene_nr": 15,
             "phrase": "Do you accept credit cards?",
             "explanation": "A customer asks if they can pay with a credit card.",
             "prompt": "A customer at a restaurant counter asking if they can pay with a credit card.",
-            "negative_prompt": "unusual currency details, overly complicated background, distorted hands"
+            "negative_prompt": "alcohol bottles, alcohol glass, unusual currency details, overly complicated background, distorted hands"
         }
     ]
 }
