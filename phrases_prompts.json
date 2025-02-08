@@ -1,53 +1,124 @@
 {
     "prompts": [
         {
+            "scene_nr": 1,
+            "phrase": "Excuse me, where can I buy a ticket?",
+            "explanation": "A traveler is at the train station and needs to purchase a ticket but doesn't know where to go.",
+            "prompt": "A traveler stands near the entrance of a train station with train schedules, and an information desk in the background.",
+            "negative_prompt": "Empty station, futuristic setting, unrealistic lighting.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 2,
+            "phrase": "How much is a one-way ticket to Berlin?",
+            "explanation": "A traveler is at the ticket counter asking about the price for a one-way trip to Berlin.",
+            "prompt": "A traveler is standing at a ticket counter, They are holding their wallet at a train station.",
+            "negative_prompt": "Crowded area, blurry signs, unrecognizable text.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 3,
+            "phrase": "Which platform does the train to Munich leave from?",
+            "explanation": "A traveler wants to know which platform their train to Munich departs from.",
+            "prompt": "A traveler holding a train ticket on a train departure platform",
+            "negative_prompt": "Unclear signs, empty station, unrealistic colors.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 4,
+            "phrase": "Is this seat taken?",
+            "explanation": "A passenger is boarding a train and wants to know if they can sit in an empty seat.",
+            "prompt": "Inside a modern train carriage, a passenger stands near an empty seat",
+            "negative_prompt": "Old-fashioned train, empty carriage, no human interaction.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 5,
+            "phrase": "Does this train go to Frankfurt?",
+            "explanation": "A traveler is confirming that they are boarding the correct train to Frankfurt.",
+            "prompt": "A traveler standing next to an open train door is on the platform",
+            "negative_prompt": "Unrealistic uniforms, futuristic setting, no passengers.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 6,
+            "phrase": "The train is delayed by 30 minutes.",
+            "explanation": "An announcement informs passengers that the train will arrive later than scheduled.",
+            "prompt": "A digital display in a busy train station",
+            "negative_prompt": "Empty station, unrealistic delay times, outdated screens.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 7,
+            "phrase": "Can I change my ticket to a later train?",
+            "explanation": "A passenger wants to modify their ticket for a different train.",
+            "prompt": "A sad passenger stands at the ticket counter, holding their ticket ",
+            "negative_prompt": "Futuristic ticket machine, empty counter, no human interaction.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 8,
+            "phrase": "Next stop: Cologne Central Station.",
+            "explanation": "An onboard announcement informs passengers about the next stop.",
+            "prompt": "Inside a moving train Passengers are seen getting ready to disembark, grabbing their luggage or standing near the doors.",
+            "negative_prompt": "Old-fashioned train, blurry screen, no passengers.",
+            "generated_at": ""
+        },
+        {
             "scene_nr": 9,
-            "phrase": "May I have a glass of water, please?",
-            "explanation": "A customer requests a glass of water from the waiter.",
-            "prompt": "A customer in a holding a glass of water in a restaurant.",
-            "negative_prompt": "two scenes, alcohol bottles, alcohol glass, unusual water color, distorted glass shapes, confusing hand positions"
+            "phrase": "Please have your tickets ready for inspection.",
+            "explanation": "A train conductor reminds passengers to prepare their tickets for checking.",
+            "prompt": "A uniformed train conductor walks down the aisle of a train",
+            "negative_prompt": "No passengers, outdated uniforms, futuristic elements.",
+            "generated_at": ""
         },
         {
             "scene_nr": 10,
-            "phrase": "Excuse me, we’ve been waiting for a while.",
-            "explanation": "A customer politely informs the waiter that their order is taking too long.",
-            "prompt": "A customer looking at their watch in a restaurant.",
-            "negative_prompt": "two scenes, alcohol bottles, alcohol glass, angry expressions, chaotic background, unnatural body positions"
+            "phrase": "I lost my luggage. Where can I report it?",
+            "explanation": "A traveler at the station has lost their luggage and is asking for assistance.",
+            "prompt": "A worried traveler stands at the information desk. The background shows a busy station with passengers",
+            "negative_prompt": "Happy expressions, unrealistic setting, empty station.",
+            "generated_at": ""
         },
         {
             "scene_nr": 11,
-            "phrase": "This isn’t what I ordered.",
-            "explanation": "A customer tells the waiter that they received the wrong dish.",
-            "prompt": "A confused customer looking at their plate in a restaurant.",
-            "negative_prompt": "two scenes, alcohol bottles, alcohol glass, aggressive reactions, unrealistic food, unnecessary clutter"
+            "phrase": "Mind the gap between the train and the platform.",
+            "explanation": "A safety announcement warns passengers to be careful while stepping onto the train.",
+            "prompt": "A train station platform with passengers boarding a train.",
+            "negative_prompt": "No safety signs, unrealistic lighting, empty platform.",
+            "generated_at": ""
         },
         {
             "scene_nr": 12,
-            "phrase": "Could we have the check, please?",
-            "explanation": "A customer asks for the bill at the end of their meal.",
-            "prompt": "A customer in a restaurant holding money",
-            "negative_prompt": "two scenes, alcohol bottles, alcohol glass, oversized check, strange hand gestures, overly dramatic facial expressions"
+            "phrase": "Where can I find the nearest restroom?",
+            "explanation": "A traveler asks for directions to the restroom inside the station.",
+            "prompt": "A traveler carrying a small bag near a train station employee",
+            "negative_prompt": "Unrealistic station layout, blurry text, no signs.",
+            "generated_at": ""
         },
         {
             "scene_nr": 13,
-            "phrase": "That was delicious! My compliments to the chef.",
-            "explanation": "A satisfied customer expresses appreciation for the meal.",
-            "prompt": "A happy customer in a restaurant",
-            "negative_prompt": "two scenes, alcohol bottles, alcohol glass, awkward smiles, unrealistic food details, odd hand placements"
+            "phrase": "Attention, passengers: The express train is arriving.",
+            "explanation": "An announcement warns passengers that a fast-moving train is about to arrive.",
+            "prompt": "A train station platform where an express train is approaching at high speed.",
+            "negative_prompt": "No train in sight, blurry platform, outdated train models.",
+            "generated_at": ""
         },
         {
             "scene_nr": 14,
-            "phrase": "Can I get this to go?",
-            "explanation": "A customer asks for their leftover food to be packed for takeaway.",
-            "prompt": "A customer in a restaurant holding a takeaway box.",
-            "negative_prompt": "two scenes, alcohol bottles, alcohol glass, weird food textures, oversized containers, chaotic table settings"
+            "phrase": "Do you accept credit cards?",
+            "explanation": "A passenger asks if they can pay for their ticket with a credit card.",
+            "prompt": "A passenger at a trainer station ticket counter is holding their credit card",
+            "negative_prompt": "Old cash-only counter, futuristic payment methods, empty scene.",
+            "generated_at": ""
         },
         {
             "scene_nr": 15,
-            "phrase": "Do you accept credit cards?",
-            "explanation": "A customer asks if they can pay with a credit card.",
-            "prompt": "A customer at a restaurant holding a credit card.",
-            "negative_prompt": "two scenes, alcohol bottles, alcohol glass, unusual currency details, overly complicated background, distorted hands"
+            "phrase": "Excuse me, is this the queue for the ticket machine?",
+            "explanation": "A traveler wants to confirm they are standing in the correct line to buy a ticket.",
+            "prompt": "A traveler stands behind a line of people waiting at a row of ticket machines in a train station.",
+            "negative_prompt": "No machines, empty queue, unrealistic station environment.",
+            "generated_at": ""
         }
     ]
 }
