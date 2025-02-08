@@ -36,7 +36,7 @@
             "scene_nr": 5,
             "phrase": "Does this train go to Frankfurt?",
             "explanation": "A traveler is confirming that they are boarding the correct train to Frankfurt.",
-            "prompt": "A traveler standing next to an open train door is on the platform",
+            "prompt": "A male traveler standing next to an open train door is on the platform",
             "negative_prompt": "Unrealistic uniforms, futuristic setting, no passengers.",
             "generated_at": ""
         },
@@ -52,7 +52,7 @@
             "scene_nr": 7,
             "phrase": "Can I change my ticket to a later train?",
             "explanation": "A passenger wants to modify their ticket for a different train.",
-            "prompt": "A sad passenger stands at the ticket counter, holding their ticket ",
+            "prompt": "A sad male passenger stands at the ticket counter, holding their ticket ",
             "negative_prompt": "Futuristic ticket machine, empty counter, no human interaction.",
             "generated_at": ""
         },
@@ -68,7 +68,7 @@
             "scene_nr": 9,
             "phrase": "Please have your tickets ready for inspection.",
             "explanation": "A train conductor reminds passengers to prepare their tickets for checking.",
-            "prompt": "A uniformed train conductor walks down the aisle of a train",
+            "prompt": "A male train conductor walks down the aisle of a train",
             "negative_prompt": "No passengers, outdated uniforms, futuristic elements.",
             "generated_at": ""
         },
@@ -76,7 +76,7 @@
             "scene_nr": 10,
             "phrase": "I lost my luggage. Where can I report it?",
             "explanation": "A traveler at the station has lost their luggage and is asking for assistance.",
-            "prompt": "A worried traveler stands at the information desk. The background shows a busy station with passengers",
+            "prompt": "A worried male traveler stands at the information desk. The background shows a busy station with passengers",
             "negative_prompt": "Happy expressions, unrealistic setting, empty station.",
             "generated_at": ""
         },
@@ -92,7 +92,7 @@
             "scene_nr": 12,
             "phrase": "Where can I find the nearest restroom?",
             "explanation": "A traveler asks for directions to the restroom inside the station.",
-            "prompt": "A traveler carrying a small bag near a train station employee",
+            "prompt": "A male traveler carrying a small bag near a train station employee",
             "negative_prompt": "Unrealistic station layout, blurry text, no signs.",
             "generated_at": ""
         },
@@ -108,7 +108,7 @@
             "scene_nr": 14,
             "phrase": "Do you accept credit cards?",
             "explanation": "A passenger asks if they can pay for their ticket with a credit card.",
-            "prompt": "A passenger at a trainer station ticket counter is holding their credit card",
+            "prompt": "A male passenger at a trainer station ticket counter is holding their credit card",
             "negative_prompt": "Old cash-only counter, futuristic payment methods, empty scene.",
             "generated_at": ""
         },
@@ -116,7 +116,7 @@
             "scene_nr": 15,
             "phrase": "Excuse me, is this the queue for the ticket machine?",
             "explanation": "A traveler wants to confirm they are standing in the correct line to buy a ticket.",
-            "prompt": "A traveler stands behind a line of people waiting at a row of ticket machines in a train station.",
+            "prompt": "A male traveler stands behind a line of people waiting at a row of ticket machines in a train station.",
             "negative_prompt": "No machines, empty queue, unrealistic station environment.",
             "generated_at": ""
         }
