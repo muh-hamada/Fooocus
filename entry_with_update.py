@@ -44,4 +44,4 @@ except Exception as e:
 
 print('Update succeeded.')
 from launch import main
-main()
+main('phrases')

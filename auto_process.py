@@ -26,13 +26,8 @@ from modules.auth import auth_enabled, check_auth
 from modules.util import is_json
 
 FASTAPI_SERVER_URL = "https://fe22-2a02-8109-b526-c500-ecb7-7e06-7f76-1531.ngrok-free.app/upload/"
-PROMPTS_FILE = "prompts.json"
-CONFIG_FILE = "config.json"
-
-# Load settings from the configuration file
-def load_config(config_path):
-    with open(config_path, 'r') as f:
-        return json.load(f)
+STORY_PROMPTS_FILE = "story_prompts.json"
+PHRASES_PROMPTS_FILE = "phrases_prompts.json"
 
 # Load prompts from the prompts file
 def load_prompts(prompts_path):
@@ -47,7 +42,7 @@ def update_prompt(data, scene_nr, generated_at):
             entry['generated_at'] = generated_at
             break
 
-    with open(PROMPTS_FILE, 'w') as f:
+    with open(STORY_PROMPTS_FILE, 'w') as f:
         json.dump(data, f, indent=4)
 
 
@@ -113,9 +108,8 @@ def upload_image(image_path, scene_nr):
         print(f"⚠️ Error uploading {image_path}: {e}")
 
 
-def process_prompt(prompt_config, data):
+def process_story_prompt(prompt_config, data):
     print(f"Processing prompt nr: {prompt_config['scene_nr']}")
-
 
     # Finalize the prompts
     final_prompts = finalize_prompts(prompt_config, data)
@@ -126,6 +120,16 @@ def process_prompt(prompt_config, data):
     print(f"Final negative prompt: {final_negative_prompt}")
 
     config = [False, final_prompt, final_negative_prompt, ['Fooocus V2', 'Fooocus Photograph', 'Fooocus Negative'], 'Quality', '1344×768 <span style="color: grey;"> ∣ 7:4</span>', 1, 'png', '3453121314987717455', False, 2, 3, 'animaPencilXL_v500.safetensors', 'None', 0.5, True, 'SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors', 0.25, True, 'None', 1, True, 'None', 1, True, 'None', 1, True, 'None', 1, False, 'uov', 'Disabled', None, [], None, '', None, False, False, False, False, 1.5, 0.8, 0.3, 7, 2, 'dpmpp_2m_sde_gpu', 'karras', 'Default (model)', -1, -1, -1, -1, -1, -1, False, False, False, False, 64, 128, 'joint', 0.25, False, 1.01, 1.02, 0.99, 0.95, False, False, 'v2.6', 1, 0.618, False, False, 0, False, False, 'fooocus', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', False, 0, False, None, True, 'Upscale (1.5x)', 'Before First Enhancement', 'Original Prompts', False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False]
+    task = get_task(config)
+    generate_clicked(task, prompt_config['scene_nr'])
+
+
+def process_phrase_prompt(prompt_config):
+    print(f"Processing prompt nr: {prompt_config['scene_nr']}")
+
+    prompt = prompt_config['prompt']
+
+    config = [False, prompt, '', ['Fooocus V2', 'Fooocus Photograph', 'Fooocus Negative'], 'Quality', '704×1344 <span style="color: grey;"> ∣ 11:21</span>', 1, 'png', '3453121314987717455', False, 2, 3, 'animaPencilXL_v500.safetensors', 'None', 0.5, True, 'SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors', 0.25, True, 'None', 1, True, 'None', 1, True, 'None', 1, True, 'None', 1, False, 'uov', 'Disabled', None, [], None, '', None, False, False, False, False, 1.5, 0.8, 0.3, 7, 2, 'dpmpp_2m_sde_gpu', 'karras', 'Default (model)', -1, -1, -1, -1, -1, -1, False, False, False, False, 64, 128, 'joint', 0.25, False, 1.01, 1.02, 0.99, 0.95, False, False, 'v2.6', 1, 0.618, False, False, 0, False, False, 'fooocus', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', False, 0, False, None, True, 'Upscale (1.5x)', 'Before First Enhancement', 'Original Prompts', False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False]
     task = get_task(config)
     generate_clicked(task, prompt_config['scene_nr'])
 
@@ -155,17 +159,28 @@ def finalize_prompts(prompt_config, data):
         "negative_prompt": final_negative_prompt
     }
 
-def main():
-    # config = load_config(CONFIG_FILE)  # Load the configuration from the JSON file
-    data = load_prompts(PROMPTS_FILE)  # Load the prompts
-    prompts = data['prompts']
+def main(type):
+    if type == 'story':
+        data = load_prompts(STORY_PROMPTS_FILE)  # Load the prompts
+        prompts = data['prompts']
 
-    print("Processing prompts...")
-    print(prompts)
+        print("Processing story prompts...")
+        print(prompts)
 
-    # Iterating over each prompt to process
-    for entry in prompts:
-        process_prompt(entry, data)
-        update_prompt(data, entry['scene_nr'], time.time())
+        # Iterating over each prompt to process
+        for entry in prompts:
+            process_story_prompt(entry, data)
+            update_prompt(data, entry['scene_nr'], time.time())
+
+    elif type == 'phrases':
+        data = load_prompts(PHRASES_PROMPTS_FILE)
+        prompts = data['prompts']
+
+        print("Processing phrases prompts...")
+        print(prompts)
+
+        # Iterating over each prompt to process
+        for entry in prompts:
+            process_phrase_prompt(entry)
 
     print("All prompts have been processed.")
