@@ -12,7 +12,7 @@
             "scene_nr": 2,
             "phrase": "Let's circle back to this later.",
             "when_to_use": "Suggesting to revisit a discussion or task at another time.",
-            "prompt": "Two colleagues in an office having a conversation.",
+            "prompt": "Two male colleagues in an office having a conversation.",
             "negative_prompt": "No whiteboards, no handshakes, no exaggerated emotions.",
             "generated_at": ""
         },
