@@ -1,43 +1,11 @@
 {
     "prompts": [
         {
-            "scene_nr": 1,
-            "phrase": "Could you give me a hand with this?",
-            "when_to_use": "Asking a colleague for help with a task.",
-            "prompt": "Two male colleagues in an office setting",
-            "negative_prompt": "no multiple scenes, No large groups, no overly cluttered backgrounds, no exaggerated facial expressions.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 2,
-            "phrase": "Let's circle back to this later.",
-            "when_to_use": "Suggesting to revisit a discussion or task at another time.",
-            "prompt": "Two male colleagues in an office having a conversation.",
-            "negative_prompt": "multiple scenes, No whiteboards, no handshakes, no exaggerated emotions.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 3,
-            "phrase": "I really appreciate your help on this!",
-            "when_to_use": "Expressing gratitude to a colleague for their assistance.",
-            "prompt": "A friendly office setting where one male person is smiling",
-            "negative_prompt": "multiple scenes, No overly dramatic poses, no visible text on objects, no unrelated office equipment.",
-            "generated_at": ""
-        },
-        {
             "scene_nr": 4,
             "phrase": "Do you have a moment to chat?",
             "when_to_use": "Requesting a short conversation with a colleague.",
-            "prompt": "An office worker standing near a male colleague's desk",
+            "prompt": "A male office worker standing near a male colleague's desk",
             "negative_prompt": "multiple scenes, No large conference rooms, no phones in hand, no distractions in the background.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 5,
-            "phrase": "Can we touch base on this tomorrow?",
-            "when_to_use": "Checking in with a colleague about discussing a topic later.",
-            "prompt": "Two coworkers in an office setting using a laptop.",
-            "negative_prompt": "multiple scenes, No large meetings, no phones, no digital screens in focus.",
             "generated_at": ""
         },
         {
