@@ -5,7 +5,7 @@
             "phrase": "Could you give me a hand with this?",
             "when_to_use": "Asking a colleague for help with a task.",
             "prompt": "Two male colleagues in an office setting",
-            "negative_prompt": "multiple scenes, No large groups, no overly cluttered backgrounds, no exaggerated facial expressions.",
+            "negative_prompt": "no multiple scenes, No large groups, no overly cluttered backgrounds, no exaggerated facial expressions.",
             "generated_at": ""
         },
         {
