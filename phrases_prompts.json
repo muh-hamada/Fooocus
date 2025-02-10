@@ -60,7 +60,7 @@
             "scene_nr": 8,
             "phrase": "That sounds like a great idea!",
             "when_to_use": "Reacting positively to a colleague's suggestion.",
-            "prompt": "An office setting where one person is speaking enthusiastically and another is nodding in agreement.",
+            "prompt": "An office setting where a male person is speaking enthusiastically and another is nodding in agreement.",
             "negative_prompt": "multiple scenes, No exaggerated expressions, no physical gestures like high-fives, no cluttered desks.",
             "generated_at": ""
         },
@@ -68,7 +68,7 @@
             "scene_nr": 9,
             "phrase": "Let's keep each other updated.",
             "when_to_use": "Ensuring ongoing communication about a task or project.",
-            "prompt": "Two office workers discussing something in the office kitchen.",
+            "prompt": "Two office male workers discussing something in the office kitchen.",
             "negative_prompt": "multiple scenes, No whiteboards, no visible emails or messages, no unnecessary props.",
             "generated_at": ""
         },
@@ -76,7 +76,7 @@
             "scene_nr": 10,
             "phrase": "I'll take care of it.",
             "when_to_use": "Assuring a colleague that you will handle a task.",
-            "prompt": "An office worker confidently speaking to another, showing responsibility.",
+            "prompt": "A male office worker confidently speaking to another, showing responsibility.",
             "negative_prompt": "multiple scenes, No exaggerated facial expressions, no phones, no excessive paperwork.",
             "generated_at": ""
         },
@@ -84,7 +84,7 @@
             "scene_nr": 11,
             "phrase": "Could we clarify this part a bit more?",
             "when_to_use": "Asking for more details or explanation about a task.",
-            "prompt": "An office worker pointing at a document",
+            "prompt": "A male office worker pointing at a document",
             "negative_prompt": "multiple scenes, No large whiteboards, no irrelevant objects, no excessive writing.",
             "generated_at": ""
         },
@@ -108,7 +108,7 @@
             "scene_nr": 14,
             "phrase": "Let's split the work evenly.",
             "when_to_use": "Suggesting a fair division of tasks between colleagues.",
-            "prompt": "Two colleagues discussing and looking organized.",
+            "prompt": "Two male colleagues discussing and looking organized.",
             "negative_prompt": "multiple scenes, No overly complex diagrams, no unrelated props, no group meetings.",
             "generated_at": ""
         },
