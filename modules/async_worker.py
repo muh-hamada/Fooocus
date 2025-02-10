@@ -730,15 +730,17 @@ def worker():
                 styles=task_styles
             ))
         if use_expansion:
-            if advance_progress:
-                current_progress += 1
-            for i, t in enumerate(tasks):
+            pass
+            # disabled for now
+            # if advance_progress:
+            #     current_progress += 1
+            # for i, t in enumerate(tasks):
 
-                progressbar(async_task, current_progress, f'Preparing Fooocus text #{i + 1} ...')
-                expansion = pipeline.final_expansion(t['task_prompt'], t['task_seed'])
-                print(f'[Prompt Expansion] {expansion}')
-                t['expansion'] = expansion
-                t['positive'] = copy.deepcopy(t['positive']) + [expansion]  # Deep copy.
+            #     progressbar(async_task, current_progress, f'Preparing Fooocus text #{i + 1} ...')
+            #     expansion = pipeline.final_expansion(t['task_prompt'], t['task_seed'])
+            #     print(f'[Prompt Expansion] {expansion}')
+            #     t['expansion'] = expansion
+            #     t['positive'] = copy.deepcopy(t['positive']) + [expansion]  # Deep copy.
         if advance_progress:
             current_progress += 1
         for i, t in enumerate(tasks):
