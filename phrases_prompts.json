@@ -5,7 +5,7 @@
             "phrase": "Could you give me a hand with this?",
             "when_to_use": "Asking a colleague for help with a task.",
             "prompt": "Two male colleagues in an office setting",
-            "negative_prompt": "No large groups, no overly cluttered backgrounds, no exaggerated facial expressions.",
+            "negative_prompt": "multiple scenes, No large groups, no overly cluttered backgrounds, no exaggerated facial expressions.",
             "generated_at": ""
         },
         {
@@ -13,7 +13,7 @@
             "phrase": "Let's circle back to this later.",
             "when_to_use": "Suggesting to revisit a discussion or task at another time.",
             "prompt": "Two male colleagues in an office having a conversation.",
-            "negative_prompt": "No whiteboards, no handshakes, no exaggerated emotions.",
+            "negative_prompt": "multiple scenes, No whiteboards, no handshakes, no exaggerated emotions.",
             "generated_at": ""
         },
         {
@@ -21,7 +21,7 @@
             "phrase": "I really appreciate your help on this!",
             "when_to_use": "Expressing gratitude to a colleague for their assistance.",
             "prompt": "A friendly office setting where one male person is smiling",
-            "negative_prompt": "No overly dramatic poses, no visible text on objects, no unrelated office equipment.",
+            "negative_prompt": "multiple scenes, No overly dramatic poses, no visible text on objects, no unrelated office equipment.",
             "generated_at": ""
         },
         {
@@ -29,7 +29,7 @@
             "phrase": "Do you have a moment to chat?",
             "when_to_use": "Requesting a short conversation with a colleague.",
             "prompt": "An office worker standing near a male colleague's desk",
-            "negative_prompt": "No large conference rooms, no phones in hand, no distractions in the background.",
+            "negative_prompt": "multiple scenes, No large conference rooms, no phones in hand, no distractions in the background.",
             "generated_at": ""
         },
         {
@@ -37,7 +37,7 @@
             "phrase": "Can we touch base on this tomorrow?",
             "when_to_use": "Checking in with a colleague about discussing a topic later.",
             "prompt": "Two coworkers in an office setting using a laptop.",
-            "negative_prompt": "No large meetings, no phones, no digital screens in focus.",
+            "negative_prompt": "multiple scenes, No large meetings, no phones, no digital screens in focus.",
             "generated_at": ""
         },
         {
@@ -45,7 +45,7 @@
             "phrase": "Let me know if you need anything!",
             "when_to_use": "Offering support to a colleague.",
             "prompt": "A male office worker looking friendly and supportive while speaking to a colleague.",
-            "negative_prompt": "No exaggerated smiling, no unrealistic props, no unrelated office elements.",
+            "negative_prompt": "multiple scenes, No exaggerated smiling, no unrealistic props, no unrelated office elements.",
             "generated_at": ""
         },
         {
@@ -53,7 +53,7 @@
             "phrase": "I think we're on the same page.",
             "when_to_use": "Confirming agreement with a colleague.",
             "prompt": "Two male colleagues sitting across from each other in an office meeting room.",
-            "negative_prompt": "No shaking hands, no excessive paperwork, no unrelated distractions.",
+            "negative_prompt": "multiple scenes, No shaking hands, no excessive paperwork, no unrelated distractions.",
             "generated_at": ""
         },
         {
@@ -61,7 +61,7 @@
             "phrase": "That sounds like a great idea!",
             "when_to_use": "Reacting positively to a colleague's suggestion.",
             "prompt": "An office setting where one person is speaking enthusiastically and another is nodding in agreement.",
-            "negative_prompt": "No exaggerated expressions, no physical gestures like high-fives, no cluttered desks.",
+            "negative_prompt": "multiple scenes, No exaggerated expressions, no physical gestures like high-fives, no cluttered desks.",
             "generated_at": ""
         },
         {
@@ -69,7 +69,7 @@
             "phrase": "Let's keep each other updated.",
             "when_to_use": "Ensuring ongoing communication about a task or project.",
             "prompt": "Two office workers discussing something in the office kitchen.",
-            "negative_prompt": "No whiteboards, no visible emails or messages, no unnecessary props.",
+            "negative_prompt": "multiple scenes, No whiteboards, no visible emails or messages, no unnecessary props.",
             "generated_at": ""
         },
         {
@@ -77,7 +77,7 @@
             "phrase": "I'll take care of it.",
             "when_to_use": "Assuring a colleague that you will handle a task.",
             "prompt": "An office worker confidently speaking to another, showing responsibility.",
-            "negative_prompt": "No exaggerated facial expressions, no phones, no excessive paperwork.",
+            "negative_prompt": "multiple scenes, No exaggerated facial expressions, no phones, no excessive paperwork.",
             "generated_at": ""
         },
         {
@@ -85,7 +85,7 @@
             "phrase": "Could we clarify this part a bit more?",
             "when_to_use": "Asking for more details or explanation about a task.",
             "prompt": "An office worker pointing at a document",
-            "negative_prompt": "No large whiteboards, no irrelevant objects, no excessive writing.",
+            "negative_prompt": "multiple scenes, No large whiteboards, no irrelevant objects, no excessive writing.",
             "generated_at": ""
         },
         {
@@ -93,7 +93,7 @@
             "phrase": "I'll get back to you on that.",
             "when_to_use": "Promising to provide an answer or update later.",
             "prompt": "A professional setting where a male worker is talking on the phone.",
-            "negative_prompt": "No exaggerated gestures, no phones, no unrelated distractions.",
+            "negative_prompt": "multiple scenes, No exaggerated gestures, no phones, no unrelated distractions.",
             "generated_at": ""
         },
         {
@@ -101,7 +101,7 @@
             "phrase": "This looks great! Well done!",
             "when_to_use": "Praising a colleague's work.",
             "prompt": "An office setting where a male person is clapping his hands.",
-            "negative_prompt": "No exaggerated cheering, no unnecessary clutter, no large groups.",
+            "negative_prompt": "multiple scenes, No exaggerated cheering, no unnecessary clutter, no large groups.",
             "generated_at": ""
         },
         {
@@ -109,7 +109,7 @@
             "phrase": "Let's split the work evenly.",
             "when_to_use": "Suggesting a fair division of tasks between colleagues.",
             "prompt": "Two colleagues discussing and looking organized.",
-            "negative_prompt": "No overly complex diagrams, no unrelated props, no group meetings.",
+            "negative_prompt": "multiple scenes, No overly complex diagrams, no unrelated props, no group meetings.",
             "generated_at": ""
         },
         {
@@ -117,7 +117,7 @@
             "phrase": "Thanks for the update!",
             "when_to_use": "Acknowledging a colleague's information or progress report.",
             "prompt": "A happy male worker in a professional office setting ",
-            "negative_prompt": "No unnecessary background elements, no phones, no exaggerated smiling.",
+            "negative_prompt": "multiple scenes, No unnecessary background elements, no phones, no exaggerated smiling.",
             "generated_at": ""
         }
     ]
