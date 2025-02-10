@@ -730,7 +730,7 @@ def worker():
                 styles=task_styles
             ))
         if use_expansion:
-            pass
+            print(f'Disabled expansion for now.')
             # disabled for now
             # if advance_progress:
             #     current_progress += 1
