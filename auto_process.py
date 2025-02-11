@@ -132,8 +132,8 @@ def process_phrase_prompt(prompt_config):
 
     apsect_ratios = [
         '704×1344 <span style="color: grey;"> ∣ 11:21</span>'
-        '704x1408 <span style="color: grey;"> ∣ 1:2</span>',
-        '1024x1024 <span style="color: grey;"> ∣ 1:1</span>',
+        '704×1408 <span style="color: grey;"> ∣ 1:2</span>',
+        '1024×1024 <span style="color: grey;"> ∣ 1:1</span>',
     ]
 
     for aspect_ratio in apsect_ratios:
