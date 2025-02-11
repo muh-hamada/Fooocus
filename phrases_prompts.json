@@ -7,6 +7,78 @@
             "prompt": "single scene, full-frame composition of A male office worker looking friendly and supportive while speaking to a colleague.",
             "negative_prompt": "multi-panel, comic strip, split sections, triptych, multiple scenes, No exaggerated smiling, no unrealistic props, no unrelated office elements.",
             "generated_at": ""
+        },
+        {
+            "scene_nr": 7,
+            "phrase": "I think we're on the same page.",
+            "when_to_use": "Confirming agreement with a colleague.",
+            "prompt": "single scene, full-frame composition of Two male colleagues sitting across from each other in an office meeting room.",
+            "negative_prompt": "multi-panel, comic strip, split sections, triptych, multiple scenes, No shaking hands, no excessive paperwork, no unrelated distractions.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 8,
+            "phrase": "That sounds like a great idea!",
+            "when_to_use": "Reacting positively to a colleague's suggestion.",
+            "prompt": "single scene, full-frame composition of An office setting where a male person is speaking enthusiastically and another is nodding in agreement.",
+            "negative_prompt": "multi-panel, comic strip, split sections, triptych, multiple scenes, No exaggerated expressions, no physical gestures like high-fives, no cluttered desks.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 9,
+            "phrase": "Let's keep each other updated.",
+            "when_to_use": "Ensuring ongoing communication about a task or project.",
+            "prompt": "single scene, full-frame composition of Two office male workers discussing something in the office kitchen.",
+            "negative_prompt": "multi-panel, comic strip, split sections, triptych, multiple scenes, No whiteboards, no visible emails or messages, no unnecessary props.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 10,
+            "phrase": "I'll take care of it.",
+            "when_to_use": "Assuring a colleague that you will handle a task.",
+            "prompt": "single scene, full-frame composition of A male office worker confidently speaking to another, showing responsibility.",
+            "negative_prompt": "multi-panel, comic strip, split sections, triptych, multiple scenes, No exaggerated facial expressions, no phones, no excessive paperwork.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 11,
+            "phrase": "Could we clarify this part a bit more?",
+            "when_to_use": "Asking for more details or explanation about a task.",
+            "prompt": "single scene, full-frame composition of A male office worker pointing at a document",
+            "negative_prompt": "multi-panel, comic strip, split sections, triptych, multiple scenes, No large whiteboards, no irrelevant objects, no excessive writing.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 12,
+            "phrase": "I'll get back to you on that.",
+            "when_to_use": "Promising to provide an answer or update later.",
+            "prompt": "single scene, full-frame composition of A professional setting where a male worker is talking on the phone.",
+            "negative_prompt": "multi-panel, comic strip, split sections, triptych, multiple scenes, No exaggerated gestures, no phones, no unrelated distractions.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 13,
+            "phrase": "This looks great! Well done!",
+            "when_to_use": "Praising a colleague's work.",
+            "prompt": "single scene, full-frame composition of An office setting where a male person is clapping his hands.",
+            "negative_prompt": "multi-panel, comic strip, split sections, triptych, multiple scenes, No exaggerated cheering, no unnecessary clutter, no large groups.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 14,
+            "phrase": "Let's split the work evenly.",
+            "when_to_use": "Suggesting a fair division of tasks between colleagues.",
+            "prompt": "single scene, full-frame composition of Two male colleagues discussing and looking organized.",
+            "negative_prompt": "multi-panel, comic strip, split sections, triptych, multiple scenes, No overly complex diagrams, no unrelated props, no group meetings.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 15,
+            "phrase": "Thanks for the update!",
+            "when_to_use": "Acknowledging a colleague's information or progress report.",
+            "prompt": "single scene, full-frame composition of A happy male worker in a professional office setting ",
+            "negative_prompt": "multi-panel, comic strip, split sections, triptych, multiple scenes, No unnecessary background elements, no phones, no exaggerated smiling.",
+            "generated_at": ""
         }
     ]
 }
