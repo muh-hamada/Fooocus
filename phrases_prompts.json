@@ -2,99 +2,108 @@
     "prompts": [
         {
             "scene_nr": 1,
-            "phrase": "Do you have this in a smaller size?",
-            "explanation": "Used when asking if a product is available in a smaller package or portion.",
-            "prompt": "A male customer holding a large product package in a supermarket aisle.",
-            "negative_prompt": "Crowded aisles, promotional banners, self-checkout machines.",
-            "generated_at": ""
+            "phrase": "Spare some change?",
+            "explanation": "A common phrase used by people asking for money on the street.",
+            "prompt": "A male person sitting on the sidewalk, holding out a small cup or hand, looking up hopefully.",
+            "negative_prompt": "Crowded background, luxury items, excessive detail."
+        },
+        {
+            "scene_nr": 2,
+            "phrase": "Which way to the subway?",
+            "explanation": "A question asked when someone is looking for directions to the subway station.",
+            "prompt": "A person standing on a street corner, pointing at a map, asking another passerby for directions.",
+            "negative_prompt": "Cars in the foreground, busy market scene, group conversation."
+        },
+        {
+            "scene_nr": 3,
+            "phrase": "Watch your step!",
+            "explanation": "A warning given when someone is about to trip or step into danger.",
+            "prompt": "A male pedestrian stepping over a broken sidewalk while another person gestures in warning.",
+            "negative_prompt": "Unclear sidewalk, dark environment, unnecessary background distractions."
+        },
+        {
+            "scene_nr": 4,
+            "phrase": "Do you know a good coffee shop around here?",
+            "explanation": "A question asked when looking for a nearby café recommendation.",
+            "prompt": "A male person standing on the sidewalk, asking a local for suggestion.",
+            "negative_prompt": "Too many people, nighttime setting, unclear street details."
         },
         {
             "scene_nr": 5,
-            "phrase": "Can I get a price check on this?",
-            "explanation": "Used when the price of an item is unclear or missing, and a store employee needs to verify it.",
-            "prompt": "A male cashier holding an item in a supermarket",
-            "negative_prompt": "Long lines, unrelated store sections, overly complex backgrounds.",
-            "generated_at": ""
+            "phrase": "Sorry, I’m in a rush!",
+            "explanation": "A polite way to refuse a conversation when in a hurry.",
+            "prompt": "A male person walking in the street, looking at a watch",
+            "negative_prompt": "Relaxed body language, standing still, chatting happily."
         },
         {
             "scene_nr": 6,
-            "phrase": "Is this on sale, or is that the regular price?",
-            "explanation": "A question to clarify whether an item is discounted or at its normal price.",
-            "prompt": "A male customer holding a product in a supermarket",
-            "negative_prompt": "Self-checkout, digital price displays, busy store aisles.",
-            "generated_at": ""
+            "phrase": "Can you break a twenty?",
+            "explanation": "A phrase used when asking if someone can provide smaller bills in exchange for a larger one.",
+            "prompt": "A person at a street stall holding a money bill",
+            "negative_prompt": "Modern supermarket, credit card transaction, digital payment terminal."
         },
         {
             "scene_nr": 7,
-            "phrase": "Do you have any more of these in the back?",
-            "explanation": "A common question when a product seems to be out of stock on the shelves.",
-            "prompt": "A male customer looking an empty shelf in a supermarket aisle.",
-            "negative_prompt": "Fully stocked shelves, checkout lines, promotional posters.",
-            "generated_at": ""
+            "phrase": "Let’s grab a bite.",
+            "explanation": "A casual way to suggest getting some food together.",
+            "prompt": "Two friends chatting on the sidewalk, pointing toward a small food stand.",
+            "negative_prompt": "Crowded area, people already eating, indoor setting."
         },
         {
             "scene_nr": 8,
-            "phrase": "I'll just grab one more thing!",
-            "explanation": "Said when a customer leaves the checkout line briefly to pick up an additional item.",
-            "prompt": "A male customer turning away from the checkout counter in a supermarket.",
-            "negative_prompt": "Long lines, cluttered shelves, unrelated store sections.",
-            "generated_at": ""
+            "phrase": "That place is a rip-off.",
+            "explanation": "A complaint about a store or restaurant being too expensive.",
+            "prompt": "A person walking away from a shop, looking frustrated, talking to a friend.",
+            "negative_prompt": "Smiling faces, people making a purchase, cheap price tags."
         },
         {
             "scene_nr": 9,
-            "phrase": "Could I get cash back with this?",
-            "explanation": "Asked when paying with a debit card and requesting extra cash along with the purchase.",
-            "prompt": "A male customer at supermarket checkout handing a debit card.",
-            "negative_prompt": "Credit cards, smartphones, self-checkout machines.",
-            "generated_at": ""
+            "phrase": "I think we’re lost.",
+            "explanation": "A phrase used when someone realizes they don’t know where they are.",
+            "prompt": "Two tourists looking at a map, confused, standing at a street corner.",
+            "negative_prompt": "Confident expressions, clear signage, GPS device."
         },
         {
             "scene_nr": 10,
-            "phrase": "Do you have a loyalty card?",
-            "explanation": "A question cashiers often ask customers to see if they want to use a rewards program.",
-            "prompt": "A smiling male cashier speaking to a customer in a supermarket checkout line",
-            "negative_prompt": "Busy lines, digital-only transactions, unrelated store sections.",
-            "generated_at": ""
+            "phrase": "Let’s take a shortcut.",
+            "explanation": "A suggestion to find a faster route by using a smaller, less crowded street.",
+            "prompt": "Two people pointing down a small alleyway while discussing their route.",
+            "negative_prompt": "Crowded main road, heavy traffic, unclear direction."
         },
         {
             "scene_nr": 11,
-            "phrase": "Would you like your receipt?",
-            "explanation": "A standard question asked by cashiers after a purchase.",
-            "prompt": "A male cashier handing a small paper receipt to a customer in a supermarket.",
-            "negative_prompt": "Self-checkout, overly cluttered counters, unrelated backgrounds.",
-            "generated_at": ""
+            "phrase": "That street performer is amazing!",
+            "explanation": "A phrase used to compliment someone performing music, dance, or tricks on the street.",
+            "prompt": "A street musician playing the guitar, with a small crowd watching.",
+            "negative_prompt": "Empty street, no instruments, no audience reaction."
         },
         {
             "scene_nr": 12,
-            "phrase": "The line is moving so slowly today.",
-            "explanation": "A casual remark about a long or slow-moving checkout line.",
-            "prompt": "An annoyed male customer waiting in a long checkout line in a supermarket.",
-            "negative_prompt": "Short lines, empty store aisles, unrelated products.",
-            "generated_at": ""
+            "phrase": "Ugh, traffic is terrible today.",
+            "explanation": "A complaint about heavy traffic making travel slow.",
+            "prompt": "A person standing at a crosswalk, looking at a long line of cars in frustration.",
+            "negative_prompt": "Empty road, smooth traffic, happy expressions."
         },
         {
             "scene_nr": 13,
-            "phrase": "I'll just pay with my phone.",
-            "explanation": "Used when choosing to use a mobile payment method instead of cash or cards.",
-            "prompt": "A male customer holding a smartphone near a payment terminal in a supermarket.",
-            "negative_prompt": "Cash transactions, paper receipts, busy backgrounds.",
-            "generated_at": ""
+            "phrase": "Let’s split a cab.",
+            "explanation": "A suggestion to share a taxi ride and the cost with someone.",
+            "prompt": "Two people standing at the curb, hailing a taxi together.",
+            "negative_prompt": "One person alone, bus instead of taxi, no visible taxi."
         },
         {
             "scene_nr": 14,
-            "phrase": "Oh, I forgot my reusable bags!",
-            "explanation": "A common realization when customers remember they left their shopping bags at home or in the car.",
-            "prompt": "A male customer at supermarket checkout with a surprised expression",
-            "negative_prompt": "Plastic bags, self-checkout, unrelated store sections.",
-            "generated_at": ""
+            "phrase": "Hold on, I need to tie my shoe.",
+            "explanation": "A phrase used when stopping to fix a loose shoelace.",
+            "prompt": "A person crouched on the sidewalk, tying their shoe, while a friend waits.",
+            "negative_prompt": "Velcro shoes, standing position, running posture."
         },
         {
             "scene_nr": 15,
-            "phrase": "Let's split this bill in half.",
-            "explanation": "A phrase used when two people want to divide the cost of groceries equally at checkout.",
-            "prompt": "Two male customers at supermarket checkout, one holding a credit card",
-            "negative_prompt": "Single customers, unrelated store sections, digital-only payments.",
-            "generated_at": ""
+            "phrase": "Hey, you dropped something!",
+            "explanation": "A phrase used to alert someone when they accidentally drop an item.",
+            "prompt": "A person bending down to pick up a wallet while another points it out.",
+            "negative_prompt": "No visible dropped item, crowded scene, distracted people."
         }
     ]
 }
