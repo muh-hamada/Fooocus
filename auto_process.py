@@ -133,13 +133,13 @@ def process_phrase_prompt(prompt_config):
     apsect_ratios = [
         '704×1344 <span style="color: grey;"> ∣ 11:21</span>'
         '704x1408 <span style="color: grey;"> ∣ 1:2</span>',
-        '1024*1024 <span style="color: grey;"> ∣ 1:1</span>',
+        '1024x1024 <span style="color: grey;"> ∣ 1:1</span>',
     ]
 
     for aspect_ratio in apsect_ratios:
         config = [False, prompt, negative_prompt, ['Fooocus V2', 'Fooocus Semi Realistic'], 'Quality', aspect_ratio, 1, 'png', '3453121314987717455', False, 2, 3, 'animaPencilXL_v500.safetensors', 'None', 0.5, True, 'SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors', 0.25, True, 'None', 1, True, 'None', 1, True, 'None', 1, True, 'None', 1, False, 'uov', 'Disabled', None, [], None, '', None, False, False, False, False, 1.5, 0.8, 0.3, 7, 2, 'dpmpp_2m_sde_gpu', 'karras', 'Default (model)', -1, -1, -1, -1, -1, -1, False, False, False, False, 64, 128, 'joint', 0.25, False, 1.01, 1.02, 0.99, 0.95, False, False, 'v2.6', 1, 0.618, False, False, 0, False, False, 'fooocus', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', None, 0.5, 0.6, 'ImagePrompt', False, 0, False, None, True, 'Upscale (1.5x)', 'Before First Enhancement', 'Original Prompts', False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False, False, '', '', '', 'sam', 'full', 'vit_b', 0.25, 0.3, 0, False, 'v2.6', 1, 0.618, 0, False]
         task = get_task(config)
-        generate_clicked(task, prompt_config['scene_nr'])
+        generate_clicked(task, f"{prompt_config['scene_nr']}_{aspect_ratio}")
 
 
 def finalize_prompts(prompt_config, data):
