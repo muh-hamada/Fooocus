@@ -1,108 +1,80 @@
 {
     "prompts": [
         {
-            "scene_nr": 1,
-            "phrase": "Spare some change?",
-            "explanation": "A common phrase used by people asking for money on the street.",
-            "prompt": "A male person sitting on the sidewalk, holding out a small cup or hand, looking up hopefully.",
-            "negative_prompt": "Crowded background, luxury items, excessive detail."
-        },
-        {
-            "scene_nr": 2,
-            "phrase": "Which way to the subway?",
-            "explanation": "A question asked when someone is looking for directions to the subway station.",
-            "prompt": "A person standing on a street corner, pointing at a map, asking another passerby for directions.",
-            "negative_prompt": "Cars in the foreground, busy market scene, group conversation."
-        },
-        {
             "scene_nr": 3,
             "phrase": "Watch your step!",
             "explanation": "A warning given when someone is about to trip or step into danger.",
-            "prompt": "A male pedestrian stepping over a broken sidewalk while another person gestures in warning.",
+            "prompt": "A male pedestrian stepping over a broken sidewalk",
             "negative_prompt": "Unclear sidewalk, dark environment, unnecessary background distractions."
-        },
-        {
-            "scene_nr": 4,
-            "phrase": "Do you know a good coffee shop around here?",
-            "explanation": "A question asked when looking for a nearby café recommendation.",
-            "prompt": "A male person standing on the sidewalk, asking a local for suggestion.",
-            "negative_prompt": "Too many people, nighttime setting, unclear street details."
-        },
-        {
-            "scene_nr": 5,
-            "phrase": "Sorry, I’m in a rush!",
-            "explanation": "A polite way to refuse a conversation when in a hurry.",
-            "prompt": "A male person walking in the street, looking at a watch",
-            "negative_prompt": "Relaxed body language, standing still, chatting happily."
         },
         {
             "scene_nr": 6,
             "phrase": "Can you break a twenty?",
             "explanation": "A phrase used when asking if someone can provide smaller bills in exchange for a larger one.",
-            "prompt": "A person at a street stall holding a money bill",
+            "prompt": "A male person at a street stall holding a money",
             "negative_prompt": "Modern supermarket, credit card transaction, digital payment terminal."
         },
         {
             "scene_nr": 7,
             "phrase": "Let’s grab a bite.",
             "explanation": "A casual way to suggest getting some food together.",
-            "prompt": "Two friends chatting on the sidewalk, pointing toward a small food stand.",
+            "prompt": "Two male friends chatting on the sidewalk, pointing toward a small food stand.",
             "negative_prompt": "Crowded area, people already eating, indoor setting."
         },
         {
             "scene_nr": 8,
             "phrase": "That place is a rip-off.",
             "explanation": "A complaint about a store or restaurant being too expensive.",
-            "prompt": "A person walking away from a shop, looking frustrated, talking to a friend.",
+            "prompt": "A male person walking away from a shop, looking frustrated, talking to a male friend.",
             "negative_prompt": "Smiling faces, people making a purchase, cheap price tags."
         },
         {
             "scene_nr": 9,
             "phrase": "I think we’re lost.",
             "explanation": "A phrase used when someone realizes they don’t know where they are.",
-            "prompt": "Two tourists looking at a map, confused, standing at a street corner.",
+            "prompt": "Two male tourists looking at a map, confused, standing at a street corner.",
             "negative_prompt": "Confident expressions, clear signage, GPS device."
         },
         {
             "scene_nr": 10,
             "phrase": "Let’s take a shortcut.",
             "explanation": "A suggestion to find a faster route by using a smaller, less crowded street.",
-            "prompt": "Two people pointing down a small alleyway while discussing their route.",
+            "prompt": "Two male people pointing down a small alleyway while discussing their route.",
             "negative_prompt": "Crowded main road, heavy traffic, unclear direction."
         },
         {
             "scene_nr": 11,
             "phrase": "That street performer is amazing!",
             "explanation": "A phrase used to compliment someone performing music, dance, or tricks on the street.",
-            "prompt": "A street musician playing the guitar, with a small crowd watching.",
+            "prompt": "A male street musician playing the guitar, with a small crowd watching.",
             "negative_prompt": "Empty street, no instruments, no audience reaction."
         },
         {
             "scene_nr": 12,
             "phrase": "Ugh, traffic is terrible today.",
             "explanation": "A complaint about heavy traffic making travel slow.",
-            "prompt": "A person standing at a crosswalk, looking at a long line of cars in frustration.",
+            "prompt": "A male person standing at a crosswalk, looking at a long line of cars in frustration.",
             "negative_prompt": "Empty road, smooth traffic, happy expressions."
         },
         {
             "scene_nr": 13,
             "phrase": "Let’s split a cab.",
             "explanation": "A suggestion to share a taxi ride and the cost with someone.",
-            "prompt": "Two people standing at the curb, hailing a taxi together.",
+            "prompt": "Two male people standing at the curb, hailing a taxi together.",
             "negative_prompt": "One person alone, bus instead of taxi, no visible taxi."
         },
         {
             "scene_nr": 14,
             "phrase": "Hold on, I need to tie my shoe.",
             "explanation": "A phrase used when stopping to fix a loose shoelace.",
-            "prompt": "A person crouched on the sidewalk, tying their shoe, while a friend waits.",
+            "prompt": "A male person crouched on the sidewalk, tying their shoe, while a friend waits.",
             "negative_prompt": "Velcro shoes, standing position, running posture."
         },
         {
             "scene_nr": 15,
             "phrase": "Hey, you dropped something!",
             "explanation": "A phrase used to alert someone when they accidentally drop an item.",
-            "prompt": "A person bending down to pick up a wallet while another points it out.",
+            "prompt": "A male person bending down to pick up a wallet while another points it out.",
             "negative_prompt": "No visible dropped item, crowded scene, distracted people."
         }
     ]
