@@ -1,80 +1,17 @@
 {
     "prompts": [
         {
-            "scene_nr": 3,
-            "phrase": "Watch your step!",
-            "explanation": "A warning given when someone is about to trip or step into danger.",
-            "prompt": "A male pedestrian stepping over a broken sidewalk",
-            "negative_prompt": "Unclear sidewalk, dark environment, unnecessary background distractions."
-        },
-        {
-            "scene_nr": 6,
-            "phrase": "Can you break a twenty?",
-            "explanation": "A phrase used when asking if someone can provide smaller bills in exchange for a larger one.",
-            "prompt": "A male person at a street stall holding a money",
-            "negative_prompt": "Modern supermarket, credit card transaction, digital payment terminal."
-        },
-        {
-            "scene_nr": 7,
-            "phrase": "Let’s grab a bite.",
-            "explanation": "A casual way to suggest getting some food together.",
-            "prompt": "Two male friends chatting on the sidewalk, pointing toward a small food stand.",
-            "negative_prompt": "Crowded area, people already eating, indoor setting."
-        },
-        {
-            "scene_nr": 8,
-            "phrase": "That place is a rip-off.",
-            "explanation": "A complaint about a store or restaurant being too expensive.",
-            "prompt": "A male person walking away from a shop, looking frustrated, talking to a male friend.",
-            "negative_prompt": "Smiling faces, people making a purchase, cheap price tags."
-        },
-        {
-            "scene_nr": 9,
-            "phrase": "I think we’re lost.",
-            "explanation": "A phrase used when someone realizes they don’t know where they are.",
-            "prompt": "Two male tourists looking at a map, confused, standing at a street corner.",
-            "negative_prompt": "Confident expressions, clear signage, GPS device."
-        },
-        {
-            "scene_nr": 10,
-            "phrase": "Let’s take a shortcut.",
-            "explanation": "A suggestion to find a faster route by using a smaller, less crowded street.",
-            "prompt": "Two male people pointing down a small alleyway while discussing their route.",
-            "negative_prompt": "Crowded main road, heavy traffic, unclear direction."
-        },
-        {
-            "scene_nr": 11,
-            "phrase": "That street performer is amazing!",
-            "explanation": "A phrase used to compliment someone performing music, dance, or tricks on the street.",
-            "prompt": "A male street musician playing the guitar, with a small crowd watching.",
-            "negative_prompt": "Empty street, no instruments, no audience reaction."
-        },
-        {
-            "scene_nr": 12,
-            "phrase": "Ugh, traffic is terrible today.",
-            "explanation": "A complaint about heavy traffic making travel slow.",
-            "prompt": "A male person standing at a crosswalk, looking at a long line of cars in frustration.",
-            "negative_prompt": "Empty road, smooth traffic, happy expressions."
-        },
-        {
-            "scene_nr": 13,
-            "phrase": "Let’s split a cab.",
-            "explanation": "A suggestion to share a taxi ride and the cost with someone.",
-            "prompt": "Two male people standing at the curb, hailing a taxi together.",
-            "negative_prompt": "One person alone, bus instead of taxi, no visible taxi."
-        },
-        {
             "scene_nr": 14,
             "phrase": "Hold on, I need to tie my shoe.",
             "explanation": "A phrase used when stopping to fix a loose shoelace.",
-            "prompt": "A male person crouched on the sidewalk, tying their shoe, while a friend waits.",
+            "prompt": "A male person crouched on the sidewalk",
             "negative_prompt": "Velcro shoes, standing position, running posture."
         },
         {
             "scene_nr": 15,
             "phrase": "Hey, you dropped something!",
             "explanation": "A phrase used to alert someone when they accidentally drop an item.",
-            "prompt": "A male person bending down to pick up a wallet while another points it out.",
+            "prompt": "A male person bending down to pick up something at a street.",
             "negative_prompt": "No visible dropped item, crowded scene, distracted people."
         }
     ]
