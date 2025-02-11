@@ -4,39 +4,15 @@
             "scene_nr": 1,
             "phrase": "Do you have this in a smaller size?",
             "explanation": "Used when asking if a product is available in a smaller package or portion.",
-            "prompt": "A customer holding a large product package in a supermarket aisle.",
+            "prompt": "A male customer holding a large product package in a supermarket aisle.",
             "negative_prompt": "Crowded aisles, promotional banners, self-checkout machines.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 2,
-            "phrase": "I think this scanned wrong.",
-            "explanation": "Said when the price at checkout seems incorrect, and the customer wants it checked.",
-            "prompt": "A customer talking to a cashier in a supermarket",
-            "negative_prompt": "Self-checkout, long lines, overly cluttered counter.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 3,
-            "phrase": "Could you double-bag that, please?",
-            "explanation": "A request to use two bags for extra support when carrying heavy or fragile items.",
-            "prompt": "A customer holding a platic bag in a supermarket checkout line.",
-            "negative_prompt": "Plastic bag bans, digital receipts, self-checkout machines.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 4,
-            "phrase": "Excuse me, where can I find fresh basil?",
-            "explanation": "A polite way to ask an employee for the location of a specific item.",
-            "prompt": "A customer standing in a supermarket aisle",
-            "negative_prompt": "Large crowds, checkout counters, unrelated products.",
             "generated_at": ""
         },
         {
             "scene_nr": 5,
             "phrase": "Can I get a price check on this?",
             "explanation": "Used when the price of an item is unclear or missing, and a store employee needs to verify it.",
-            "prompt": "A cashier holding an item in a supermarket",
+            "prompt": "A male cashier holding an item in a supermarket",
             "negative_prompt": "Long lines, unrelated store sections, overly complex backgrounds.",
             "generated_at": ""
         },
@@ -44,7 +20,7 @@
             "scene_nr": 6,
             "phrase": "Is this on sale, or is that the regular price?",
             "explanation": "A question to clarify whether an item is discounted or at its normal price.",
-            "prompt": "A customer holding a product in a supermarket",
+            "prompt": "A male customer holding a product in a supermarket",
             "negative_prompt": "Self-checkout, digital price displays, busy store aisles.",
             "generated_at": ""
         },
@@ -52,7 +28,7 @@
             "scene_nr": 7,
             "phrase": "Do you have any more of these in the back?",
             "explanation": "A common question when a product seems to be out of stock on the shelves.",
-            "prompt": "A customer looking an empty shelf in a supermarket aisle.",
+            "prompt": "A male customer looking an empty shelf in a supermarket aisle.",
             "negative_prompt": "Fully stocked shelves, checkout lines, promotional posters.",
             "generated_at": ""
         },
@@ -60,7 +36,7 @@
             "scene_nr": 8,
             "phrase": "I'll just grab one more thing!",
             "explanation": "Said when a customer leaves the checkout line briefly to pick up an additional item.",
-            "prompt": "A customer turning away from the checkout counter in a supermarket.",
+            "prompt": "A male customer turning away from the checkout counter in a supermarket.",
             "negative_prompt": "Long lines, cluttered shelves, unrelated store sections.",
             "generated_at": ""
         },
@@ -68,7 +44,7 @@
             "scene_nr": 9,
             "phrase": "Could I get cash back with this?",
             "explanation": "Asked when paying with a debit card and requesting extra cash along with the purchase.",
-            "prompt": "A customer at supermarket checkout handing a debit card.",
+            "prompt": "A male customer at supermarket checkout handing a debit card.",
             "negative_prompt": "Credit cards, smartphones, self-checkout machines.",
             "generated_at": ""
         },
@@ -76,7 +52,7 @@
             "scene_nr": 10,
             "phrase": "Do you have a loyalty card?",
             "explanation": "A question cashiers often ask customers to see if they want to use a rewards program.",
-            "prompt": "A smiling cashier speaking to a customer in a supermarket checkout line",
+            "prompt": "A smiling male cashier speaking to a customer in a supermarket checkout line",
             "negative_prompt": "Busy lines, digital-only transactions, unrelated store sections.",
             "generated_at": ""
         },
@@ -84,7 +60,7 @@
             "scene_nr": 11,
             "phrase": "Would you like your receipt?",
             "explanation": "A standard question asked by cashiers after a purchase.",
-            "prompt": "A cashier handing a small paper receipt to a customer in a supermarket.",
+            "prompt": "A male cashier handing a small paper receipt to a customer in a supermarket.",
             "negative_prompt": "Self-checkout, overly cluttered counters, unrelated backgrounds.",
             "generated_at": ""
         },
@@ -92,7 +68,7 @@
             "scene_nr": 12,
             "phrase": "The line is moving so slowly today.",
             "explanation": "A casual remark about a long or slow-moving checkout line.",
-            "prompt": "An annoyed customer waiting in a long checkout line in a supermarket.",
+            "prompt": "An annoyed male customer waiting in a long checkout line in a supermarket.",
             "negative_prompt": "Short lines, empty store aisles, unrelated products.",
             "generated_at": ""
         },
@@ -100,7 +76,7 @@
             "scene_nr": 13,
             "phrase": "I'll just pay with my phone.",
             "explanation": "Used when choosing to use a mobile payment method instead of cash or cards.",
-            "prompt": "A customer holding a smartphone near a payment terminal in a supermarket.",
+            "prompt": "A male customer holding a smartphone near a payment terminal in a supermarket.",
             "negative_prompt": "Cash transactions, paper receipts, busy backgrounds.",
             "generated_at": ""
         },
@@ -108,7 +84,7 @@
             "scene_nr": 14,
             "phrase": "Oh, I forgot my reusable bags!",
             "explanation": "A common realization when customers remember they left their shopping bags at home or in the car.",
-            "prompt": "A customer at supermarket checkout with a surprised expression",
+            "prompt": "A male customer at supermarket checkout with a surprised expression",
             "negative_prompt": "Plastic bags, self-checkout, unrelated store sections.",
             "generated_at": ""
         },
@@ -116,7 +92,7 @@
             "scene_nr": 15,
             "phrase": "Let's split this bill in half.",
             "explanation": "A phrase used when two people want to divide the cost of groceries equally at checkout.",
-            "prompt": "Two customers at supermarket checkout, one holding a credit card",
+            "prompt": "Two male customers at supermarket checkout, one holding a credit card",
             "negative_prompt": "Single customers, unrelated store sections, digital-only payments.",
             "generated_at": ""
         }
