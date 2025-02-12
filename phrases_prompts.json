@@ -1,26 +1,10 @@
 {
     "prompts": [
         {
-            "scene_nr": 1,
-            "phrase": "No worries, it happens to the best of us!",
-            "explanation": "Used when a friend or neighbor apologizes for a small mistake, reassuring them that it's not a big deal.",
-            "prompt": "Two male neighbors talking at the doorstep, one looking sad, the other smiling reassuringly.",
-            "negative_prompt": "Angry expressions, tense body language, background distractions.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 2,
-            "phrase": "Fancy a cup of tea?",
-            "explanation": "A friendly way to invite someone over for tea or coffee, often used among neighbors and friends.",
-            "prompt": "A friendly male neighbor standing by an open door, holding a steaming cup of tea, smiling invitingly.",
-            "negative_prompt": "Unfriendly expressions, messy surroundings, overly crowded background.",
-            "generated_at": ""
-        },
-        {
             "scene_nr": 3,
             "phrase": "Pop by anytime!",
             "explanation": "An informal way of telling someone they are always welcome to visit.",
-            "prompt": "A female neighbor wearning modest clothing waving from their doorstep with an inviting smile.",
+            "prompt": "A male neighbor waving from their doorstep with an inviting smile.",
             "negative_prompt": "Closed doors, unwelcoming body language, gloomy atmosphere.",
             "generated_at": ""
         },
@@ -28,97 +12,17 @@
             "scene_nr": 4,
             "phrase": "Let me lend you a hand.",
             "explanation": "A helpful offer when a neighbor or friend seems to be struggling with something.",
-            "prompt": "One male person helping another carry groceries up the stairs.",
+            "prompt": "One male person carry groceries up the stairs.",
             "negative_prompt": "Indifference, ignoring someone in need, chaotic background.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 5,
-            "phrase": "It's been ages! How have you been?",
-            "explanation": "A warm greeting when you see a friend or neighbor after a long time.",
-            "prompt": "Two male friends meeting on the street, smiling and chatting enthusiastically.",
-            "negative_prompt": "Cold expressions, rushed body language, unengaging interaction.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 6,
-            "phrase": "Mind if I borrow this for a sec?",
-            "explanation": "A polite way to ask to use something belonging to a friend or neighbor for a short time.",
-            "prompt": "A male neighbor holding out a hammer, smiling while asking a favor.",
-            "negative_prompt": "Aggressive body language, refusal gestures, cluttered background.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 7,
-            "phrase": "Could you keep an eye on my place while I'm away?",
-            "explanation": "A request to a trusted neighbor to check on your home while you're gone.",
-            "prompt": "A female person wearning modest clothing handing a spare key to their female neighbor wearning modest clothing with a grateful expression.",
-            "negative_prompt": "Suspicious expressions, unwilling gestures, chaotic environment.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 8,
-            "phrase": "What's the latest gossip?",
-            "explanation": "A casual way of asking a friend or neighbor for recent news or updates.",
-            "prompt": "Two male friends chatting over a fence with amused expressions.",
-            "negative_prompt": "Hostile body language, serious or sad expressions, cluttered background.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 9,
-            "phrase": "Let's catch up soon!",
-            "explanation": "A friendly way of suggesting meeting again to talk and spend time together.",
-            "prompt": "Two male friends saying goodbye on the sidewalk with smiles.",
-            "negative_prompt": "Cold expressions, rushed body language, disengaged posture.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 10,
-            "phrase": "You're a lifesaver!",
-            "explanation": "A way to thank a friend or neighbor for a big favor.",
-            "prompt": "A female person wearning modest clothing handing a missing ingredient to a female neighbor in a kitchen doorway.",
-            "negative_prompt": "Unappreciative expressions, messy environment, chaotic scene.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 11,
-            "phrase": "Any plans for the weekend?",
-            "explanation": "A casual way to start a conversation and show interest in someone's schedule.",
-            "prompt": "Two male friends chatting in front of a house building, smiling and relaxed.",
-            "negative_prompt": "Unfriendly expressions, disengaged body language, distracting background.",
             "generated_at": ""
         },
         {
             "scene_nr": 12,
             "phrase": "Give me a shout if you need anything!",
             "explanation": "An offer to help if needed, often said to a neighbor.",
-            "prompt": "A female neighbor wearning modest clothing waving from their front yard while smiling.",
+            "prompt": "An old man waving from their front yard while smiling.",
             "negative_prompt": "Indifference, closed doors, unfriendly atmosphere.",
             "generated_at": ""
         },
-        {
-            "scene_nr": 13,
-            "phrase": "Sorry to bother you, but…",
-            "explanation": "A polite way to start a request when asking a favor from a neighbor or friend.",
-            "prompt": "A female person wearing hijab standing at a neighbor's doorstep, looking slightly hesitant.",
-            "negative_prompt": "Rude gestures, annoyed expressions, messy background.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 14,
-            "phrase": "What a small world!",
-            "explanation": "Used when discovering an unexpected connection with someone.",
-            "prompt": "Two male people at a kids party, surprised and laughing",
-            "negative_prompt": "Confused expressions, disengaged postures, chaotic scene.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 15,
-            "phrase": "I owe you one!",
-            "explanation": "A way to express gratitude and promise to return a favor.",
-            "prompt": "A male person receiving a helping hand from a friend, smiling appreciatively.",
-            "negative_prompt": "Unthankful body language, unfriendly expressions, cluttered background.",
-            "generated_at": ""
-        }
     ]
 }
