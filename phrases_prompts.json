@@ -23,6 +23,6 @@
             "prompt": "An old man waving from their front yard while smiling.",
             "negative_prompt": "Indifference, closed doors, unfriendly atmosphere.",
             "generated_at": ""
-        },
+        }
     ]
 }
