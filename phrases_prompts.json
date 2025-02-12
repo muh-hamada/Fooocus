@@ -1,54 +1,23 @@
 {
     "prompts": [
-        
-        {
-            "scene_nr": 3,
-            "phrase": "Please take a deep breath and hold it.",
-            "when_to_use": "A doctor instructs a patient during a check-up, often when using a stethoscope.",
-            "prompt": "A male doctor standing next to exam table with an old patient, holding a stethoscope",
-            "negative_prompt": "No hospital beds, no complex medical equipment, no other doctors or patients.",
-            "generated_at": ""
-        },
         {
             "scene_nr": 6,
             "phrase": "The results should be ready in a few days.",
             "when_to_use": "A doctor or nurse informs a patient that test results will take time to process.",
-            "prompt": "A nurse wearning modest cloths handing a document to a patient who is sitting in a hospital chair.",
+            "prompt": "A male nurse holding a document",
             "negative_prompt": "No computers, no large medical machines, no multiple staff members.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 8,
-            "phrase": "I have a terrible headache and feel dizzy.",
-            "when_to_use": "A patient describes their symptoms to a doctor or nurse.",
-            "prompt": "A male patient sitting in a hospital chair, holding their forehead with a concerned look.",
-            "negative_prompt": "No overly dramatic expressions, no visible injuries, no complex backgrounds.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 9,
-            "phrase": "You need to take this medicine twice a day.",
-            "when_to_use": "A doctor or pharmacist gives instructions on how to take prescribed medicine.",
-            "prompt": "A male nurse handing a small bottle of medicine",
-            "negative_prompt": "No multiple patients, no cash registers, no excessive details.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 10,
-            "phrase": "Please wait here until the doctor is ready.",
-            "when_to_use": "A receptionist or nurse asks a patient to wait for their turn.",
-            "prompt": "A male patient sitting on a simple chair in a waiting area, looking at phone.",
-            "negative_prompt": "No crowded rooms, no other patients, no hospital beds.",
             "generated_at": ""
         },
         {
             "scene_nr": 11,
             "phrase": "We need to take your blood pressure.",
             "when_to_use": "A nurse informs a patient before checking their blood pressure.",
-            "prompt": "A male nurse using standing next to an old patient",
+            "prompt": "A male nurse using standing next to an old male patient",
             "negative_prompt": "No complex medical devices, no hospital beds, no other staff members.",
             "generated_at": ""
         },
+
+        
         {
             "scene_nr": 12,
             "phrase": "You're going to feel a little pinch.",
