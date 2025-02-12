@@ -1,18 +1,124 @@
 {
     "prompts": [
         {
+            "scene_nr": 1,
+            "phrase": "I need to see a doctor as soon as possible.",
+            "when_to_use": "Used when someone arrives at the hospital with an urgent medical issue.",
+            "prompt": "A worried male person standing at the hospital reception, speaking to a receptionist behind a desk.",
+            "negative_prompt": "No other patients waiting in line, no overly dramatic injuries, no complex backgrounds.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 2,
+            "phrase": "Do you have any allergies to medication?",
+            "when_to_use": "A doctor or nurse asks this before prescribing or giving medicine.",
+            "prompt": "A male doctor holding a clipboard, talking to a patient sitting on an examination table.",
+            "negative_prompt": "No visible pills, no hospital beds, no multiple patients.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 3,
+            "phrase": "Please take a deep breath and hold it.",
+            "when_to_use": "A doctor instructs a patient during a check-up, often when using a stethoscope.",
+            "prompt": "A male doctor using a stethoscope to listen to a patient's chest while they sit on an exam table.",
+            "negative_prompt": "No hospital beds, no complex medical equipment, no other doctors or patients.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 4,
+            "phrase": "You'll need to stay overnight for observation.",
+            "when_to_use": "A doctor informs a patient that they need to stay in the hospital for monitoring.",
+            "prompt": "A male doctor talking to a patient who is sitting on a hospital bed in a simple room.",
+            "negative_prompt": "No IV drips, no family members, no severe injuries.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 5,
+            "phrase": "We'll run some tests to find out what's wrong.",
+            "when_to_use": "A doctor explains that they need to perform medical tests to diagnose a patient.",
+            "prompt": "A male doctor sitting at a desk, explaining something to a patient across from them.",
+            "negative_prompt": "No test tubes, no large machines, no multiple doctors.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 6,
+            "phrase": "The results should be ready in a few days.",
+            "when_to_use": "A doctor or nurse informs a patient that test results will take time to process.",
+            "prompt": "A nurse handing a document to a patient who is sitting in a hospital chair.",
+            "negative_prompt": "No computers, no large medical machines, no multiple staff members.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 7,
+            "phrase": "Can you describe your symptoms?",
+            "when_to_use": "A doctor or nurse asks a patient about their health condition.",
+            "prompt": "A male doctor sitting at a desk, looking at a patient and taking notes.",
+            "negative_prompt": "No dramatic injuries, no medical charts, no hospital beds.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 8,
+            "phrase": "I have a terrible headache and feel dizzy.",
+            "when_to_use": "A patient describes their symptoms to a doctor or nurse.",
+            "prompt": "A patient sitting in a hospital chair, holding their forehead with a concerned look.",
+            "negative_prompt": "No overly dramatic expressions, no visible injuries, no complex backgrounds.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 9,
+            "phrase": "You need to take this medicine twice a day.",
+            "when_to_use": "A doctor or pharmacist gives instructions on how to take prescribed medicine.",
+            "prompt": "A male nurse handing a small bottle of medicine to a patient at a pharmacy counter.",
+            "negative_prompt": "No multiple patients, no cash registers, no excessive details.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 10,
+            "phrase": "Please wait here until the doctor is ready.",
+            "when_to_use": "A receptionist or nurse asks a patient to wait for their turn.",
+            "prompt": "A patient sitting on a simple chair in a waiting area, looking at a clock or phone.",
+            "negative_prompt": "No crowded rooms, no other patients, no hospital beds.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 11,
+            "phrase": "We need to take your blood pressure.",
+            "when_to_use": "A nurse informs a patient before checking their blood pressure.",
+            "prompt": "A nurse using a blood pressure cuff on a patient's arm in a clinic setting.",
+            "negative_prompt": "No complex medical devices, no hospital beds, no other staff members.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 12,
+            "phrase": "You're going to feel a little pinch.",
+            "when_to_use": "A nurse or doctor says this before giving an injection or drawing blood.",
+            "prompt": "A male nurse preparing to give an injection to a patient who looks slightly nervous.",
+            "negative_prompt": "No visible blood, no painful expressions, no multiple patients.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 13,
+            "phrase": "Your condition is improving, but you still need rest.",
+            "when_to_use": "A doctor reassures a recovering patient while advising continued care.",
+            "prompt": "A male doctor standing next to a hospital bed, smiling and talking to a patient.",
+            "negative_prompt": "No IV drips, no visitors, no other hospital staff.",
+            "generated_at": ""
+        },
+        {
             "scene_nr": 14,
-            "phrase": "Hold on, I need to tie my shoe.",
-            "explanation": "A phrase used when stopping to fix a loose shoelace.",
-            "prompt": "A male person crouched on the sidewalk",
-            "negative_prompt": "Velcro shoes, standing position, running posture."
+            "phrase": "Please fill out these forms before your appointment.",
+            "when_to_use": "A receptionist hands forms to a patient to complete before seeing a doctor.",
+            "prompt": "A receptionist at a front desk, giving papers to a patient.",
+            "negative_prompt": "No computers, no large stacks of paper, no crowded areas.",
+            "generated_at": ""
         },
         {
             "scene_nr": 15,
-            "phrase": "Hey, you dropped something!",
-            "explanation": "A phrase used to alert someone when they accidentally drop an item.",
-            "prompt": "A male person bending down to pick up something at a street.",
-            "negative_prompt": "No visible dropped item, crowded scene, distracted people."
+            "phrase": "We'll schedule a follow-up appointment next week.",
+            "when_to_use": "A doctor or receptionist arranges a future visit for a patient.",
+            "prompt": "A nurse writing on a computer while speaking to a patient at the reception desk.",
+            "negative_prompt": "No digital screens, no crowded spaces, no multiple patients.",
+            "generated_at": ""
         }
     ]
 }
