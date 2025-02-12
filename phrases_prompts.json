@@ -16,24 +16,6 @@
             "negative_prompt": "No complex medical devices, no hospital beds, no other staff members.",
             "generated_at": ""
         },
-
-        
-        {
-            "scene_nr": 12,
-            "phrase": "You're going to feel a little pinch.",
-            "when_to_use": "A nurse or doctor says this before giving an injection or drawing blood.",
-            "prompt": "A male nurse preparing to give an injection",
-            "negative_prompt": "No visible blood, no painful expressions, no multiple patients.",
-            "generated_at": ""
-        },
-        {
-            "scene_nr": 13,
-            "phrase": "Your condition is improving, but you still need rest.",
-            "when_to_use": "A doctor reassures a recovering patient while advising continued care.",
-            "prompt": "A male doctor standing next to a hospital bed, smiling and talking to a male patient.",
-            "negative_prompt": "No IV drips, no visitors, no other hospital staff.",
-            "generated_at": ""
-        },
         {
             "scene_nr": 14,
             "phrase": "Please fill out these forms before your appointment.",
