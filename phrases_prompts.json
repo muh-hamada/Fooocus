@@ -1,27 +1,68 @@
 {
+    "introduction": "This dialogue takes place in an English language class. A male and a female student practice introducing themselves in English. Learning introductions is important because it helps you start conversations and build confidence when speaking in a new language.",
     "prompts": [
         {
+            "scene_nr": 1,
+            "gender": "female",
+            "sentence": "Hello, my name is Aisha. What is your name?",
+            "prompt": "A classroom with wooden desks and chairs, a whiteboard on the wall, and a window letting in sunlight. A young woman with brown eyes, wearing a dark blue hijab, a long-sleeved white blouse, and a long navy skirt stands next to a desk, smiling and looking forward.",
+            "negative_prompt": "No other students, no animals, no decorations on the walls besides the whiteboard, no modern technology like laptops or projectors.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 2,
+            "gender": "male",
+            "sentence": "Hi Aisha, my name is David. Nice to meet you!",
+            "prompt": "A classroom with wooden desks and chairs, a whiteboard on the wall, and a window letting in sunlight. A young man with short black hair, brown eyes, wearing a green t-shirt and blue jeans stands next to a desk, smiling and looking forward.",
+            "negative_prompt": "No other students, no animals, no decorations on the walls besides the whiteboard, no modern technology like laptops or projectors.",
+            "generated_at": ""
+        },
+        {
             "scene_nr": 3,
-            "phrase": "Pop by anytime!",
-            "explanation": "An informal way of telling someone they are always welcome to visit.",
-            "prompt": "A male neighbor waving from their doorstep with an inviting smile.",
-            "negative_prompt": "Closed doors, unwelcoming body language, gloomy atmosphere.",
+            "gender": "female",
+            "sentence": "Nice to meet you too, David. Where are you from?",
+            "prompt": "A classroom with wooden desks and chairs, a whiteboard on the wall, and a window letting in sunlight. A young woman with brown eyes, wearing a dark blue hijab, a long-sleeved white blouse, and a long navy skirt stands next to a desk, speaking and looking forward.",
+            "negative_prompt": "No other students, no animals, no decorations on the walls besides the whiteboard, no modern technology like laptops or projectors.",
             "generated_at": ""
         },
         {
             "scene_nr": 4,
-            "phrase": "Let me lend you a hand.",
-            "explanation": "A helpful offer when a neighbor or friend seems to be struggling with something.",
-            "prompt": "One male person carry groceries up the stairs.",
-            "negative_prompt": "Indifference, ignoring someone in need, chaotic background.",
+            "gender": "male",
+            "sentence": "I am from Canada. And you?",
+            "prompt": "A classroom with wooden desks and chairs, a whiteboard on the wall, and a window letting in sunlight. A young man with short black hair, brown eyes, wearing a green t-shirt and blue jeans stands next to a desk, speaking and looking forward.",
+            "negative_prompt": "No other students, no animals, no decorations on the walls besides the whiteboard, no modern technology like laptops or projectors.",
             "generated_at": ""
         },
         {
-            "scene_nr": 12,
-            "phrase": "Give me a shout if you need anything!",
-            "explanation": "An offer to help if needed, often said to a neighbor.",
-            "prompt": "An old man waving from their front yard while smiling.",
-            "negative_prompt": "Indifference, closed doors, unfriendly atmosphere.",
+            "scene_nr": 5,
+            "gender": "female",
+            "sentence": "I am from Egypt. How long have you been learning English?",
+            "prompt": "A classroom with wooden desks and chairs, a whiteboard on the wall, and a window letting in sunlight. A young woman with brown eyes, wearing a dark blue hijab, a long-sleeved white blouse, and a long navy skirt stands next to a desk, speaking and looking forward.",
+            "negative_prompt": "No other students, no animals, no decorations on the walls besides the whiteboard, no modern technology like laptops or projectors.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 6,
+            "gender": "male",
+            "sentence": "For two years. I really like learning new languages!",
+            "prompt": "A classroom with wooden desks and chairs, a whiteboard on the wall, and a window letting in sunlight. A young man with short black hair, brown eyes, wearing a green t-shirt and blue jeans stands next to a desk, speaking and looking forward.",
+            "negative_prompt": "No other students, no animals, no decorations on the walls besides the whiteboard, no modern technology like laptops or projectors.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 7,
+            "gender": "female",
+            "sentence": "That’s great! English is very useful.",
+            "prompt": "A classroom with wooden desks and chairs, a whiteboard on the wall, and a window letting in sunlight. A young woman with brown eyes, wearing a dark blue hijab, a long-sleeved white blouse, and a long navy skirt stands next to a desk, speaking and looking forward.",
+            "negative_prompt": "No other students, no animals, no decorations on the walls besides the whiteboard, no modern technology like laptops or projectors.",
+            "generated_at": ""
+        },
+        {
+            "scene_nr": 8,
+            "gender": "male",
+            "sentence": "Yes, I want to travel and meet new people!",
+            "prompt": "A classroom with wooden desks and chairs, a whiteboard on the wall, and a window letting in sunlight. A young man with short black hair, brown eyes, wearing a green t-shirt and blue jeans stands next to a desk, speaking and looking forward.",
+            "negative_prompt": "No other students, no animals, no decorations on the walls besides the whiteboard, no modern technology like laptops or projectors.",
             "generated_at": ""
         }
     ]
